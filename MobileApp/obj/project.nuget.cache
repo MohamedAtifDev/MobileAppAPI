@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VWIdlFLxDUw2noRyhDRkVI8DiynyYoBazeW6q3WIzrbVvI2aAmjxMX+STkLzxX7vONHHmKTpdVeN/oLGMpSfAA==",
+  "dgSpecHash": "HiXLs448COgXgoptzryfRpPfXlZSkcloCPKa8x+lyqYUNu6gQLQ5xdYNmrKySC+ck9gW++iCoNfbuc8IL/wP4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EL-masreya\\source\\repos\\MobileApp\\MobileApp\\MobileApp.csproj",
+  "projectFilePath": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EL-masreya\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\EL-masreya\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

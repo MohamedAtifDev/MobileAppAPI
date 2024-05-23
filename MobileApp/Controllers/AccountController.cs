@@ -80,7 +80,7 @@ namespace OnlineExamAPI.Controllers
 
                         if (AddToRole.Succeeded)
                         {
-                            message.Add("sign up successfully");
+                            message.Add("تم الاشتراك بنجاح");
 
 
                             var userdata = new UserDTO
@@ -153,8 +153,8 @@ namespace OnlineExamAPI.Controllers
 
                         if (AddToRole.Succeeded)
                         {
-                            message.Add("sign up successfully");
-                   
+                            message.Add("تم الاشتراك بنجاح");
+
 
                             var userdata = new UserDTO
                             {
@@ -211,7 +211,7 @@ namespace OnlineExamAPI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var result = await signInManager.PasswordSignInAsync(sign.UserName, sign.Password, sign.remember, false);
+                    var result = await signInManager.PasswordSignInAsync(sign.UserName, sign.Password, sign.remember == null ? false :true, false);
              
                     var user=await usermanager.FindByNameAsync(sign.UserName);
                    
@@ -224,7 +224,7 @@ namespace OnlineExamAPI.Controllers
                         {
                             var messages = new string[]
                       {
-                               "sign in successfully"
+                               "تم تسجيل الدخول بنجاح"
                       }.ToList();
 
                             var userdata = new UserDTO
@@ -238,7 +238,7 @@ namespace OnlineExamAPI.Controllers
                         {
                             var invalidmessages = new string[]
                                                {
-                               "Invalid UserName or Password Attempt"
+                               "كلمه المرور او البريد الالكترونى غير صحيح"
                                                }.ToList();
                             return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
                         }
@@ -248,7 +248,7 @@ namespace OnlineExamAPI.Controllers
                     {
                         var invalidmessages = new string[]
                        {
-                               "Invalid UserName or Password Attempt"
+                                    "كلمه المرور او البريد الالكترونى غير صحيح"
                        }.ToList();
                         return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
 
@@ -288,7 +288,7 @@ namespace OnlineExamAPI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var result = await signInManager.PasswordSignInAsync(sign.UserName, sign.Password, sign.remember, false);
+                    var result = await signInManager.PasswordSignInAsync(sign.UserName, sign.Password, sign.remember==null ?false :true, false);
 
                     var user = await usermanager.FindByNameAsync(sign.UserName);
 
@@ -301,7 +301,7 @@ namespace OnlineExamAPI.Controllers
                         {
                             var messages = new string[]
                       {
-                               "sign in successfully"
+                                   "تم تسجيل الدخول بنجاح"
                       }.ToList();
 
                             var userdata = new UserDTO
@@ -315,7 +315,7 @@ namespace OnlineExamAPI.Controllers
                         {
                             var invalidmessages = new string[]
                                                {
-                               "Invalid UserName or Password Attempt"
+                                    "كلمه المرور او البريد الالكترونى غير صحيح"
                                                }.ToList();
                             return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
                         }
@@ -325,7 +325,7 @@ namespace OnlineExamAPI.Controllers
                     {
                         var invalidmessages = new string[]
                        {
-                               "Invalid UserName or Password Attempt"
+                                    "كلمه المرور او البريد الالكترونى غير صحيح"
                        }.ToList();
                         return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
 
@@ -369,19 +369,19 @@ namespace OnlineExamAPI.Controllers
                     var token = GenereateToken();
                     user.Token = token;
                     await usermanager.UpdateAsync(user);
-                    var email = $"Your Validation Code is {token} ";
+                    var email = $"  {token} رمز التحقق الخاص بك هو ";
 
                     var state = MailSender.sendmail(fg.Email, email);
                     var message = new List<string>();
                     if (state.Result)
                     {
                     
-                        message.Add("Token  sended Successfully");
+                        message.Add("تم ارسال رمز التحقق بنجاح");
                         return new CustomReponse<string> { StatusCode = 200, Message = message, Data = token.ToString() };
                     }
                     else
                     {
-                        message.Add("Something Wrong");
+                        message.Add("خطا في النظام");
                         return new CustomReponse<string> { StatusCode = 500, Message = message, Data = null };
                     }
 
@@ -391,7 +391,7 @@ namespace OnlineExamAPI.Controllers
                 {
 
                     var message = new List<string>();
-                    message.Add("User Not Found");
+                    message.Add("المستخدم غير موجود");
                     return new CustomReponse<string> { StatusCode = 404, Message = message, Data = null };
                 }
             }
@@ -425,25 +425,25 @@ namespace OnlineExamAPI.Controllers
 
                         if (updateResult.Succeeded)
                         {
-                            message.Add("Password Rested Successfully");
+                            message.Add("تم اعادة تعيين كلمة المرور بنجاح");
                             return new CustomReponse<string> { StatusCode = 200, Message = message, Data = null };
                         }
                         else
                         {
-                            message.Add("Something Wrong");
+                            message.Add("خطا في النظام");
                             return new CustomReponse<string> { StatusCode = 500, Message = message, Data = null };
                         }
                     }
                     else
                     {
-                        message.Add("Invalid Token");
+                        message.Add("رمز تحقق غير صحيح");
                         return new CustomReponse<string> { StatusCode = 500, Message = message, Data = null };
                     }
                 }
                 else
                 {
 
-                    message.Add("User Not Found");
+                    message.Add("مستخدم غير موجود");
                     return new CustomReponse<string> { StatusCode = 404, Message = message, Data = null };
 
 

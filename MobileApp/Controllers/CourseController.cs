@@ -32,7 +32,7 @@ namespace MobileApp.Controllers
             var data = icourse.GetAll();
             var result = mapper.Map<IEnumerable<CourseDTo>>(data);
             var message = new List<string>();
-            message.Add("Data Retrieved Successfully");
+            message.Add("تم استرجاع البيانات بنجاح");
             return new CustomReponse<IEnumerable<CourseDTo>> { StatusCode = 200, Data = result, Message = message };
 
 
@@ -47,7 +47,7 @@ namespace MobileApp.Controllers
             {
                 var result = mapper.Map<CourseDTo>(data);
                 var message = new List<string>();
-                message.Add("Data Retrieved Successfully");
+                message.Add("تم استرجاع البيانات بنجاح");
                 return new CustomReponse<CourseDTo> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
@@ -67,7 +67,7 @@ namespace MobileApp.Controllers
                     var data = mapper.Map<Course>(CreateCourseDTO);
                     icourse.Add(data);
                     var message = new List<string>();
-                    message.Add("Course Added Successfully");
+                    message.Add("تم ااضافة المادة بنجاح");
                     return new CustomReponse<CreateCourseDTO> { StatusCode = 200, Data = CreateCourseDTO, Message = message };
                 }
                 var errors = ModelState.Values.SelectMany(v => v.Errors)
@@ -80,9 +80,9 @@ namespace MobileApp.Controllers
             catch (UniqueConstraintException e)
             {
                 var message = new List<string>();
-                foreach (var student in e.ConstraintProperties)
+                foreach (var course in e.ConstraintProperties)
                 {
-                    message.Add(student + " is Already Used");
+                    message.Add($"  موجودة بالفعل {course} المادة ");
                 }
                 return new CustomReponse<CreateCourseDTO> { StatusCode = 400, Data = null, Message = message };
 
@@ -109,13 +109,13 @@ namespace MobileApp.Controllers
                         var data = mapper.Map<Course>(CourseDTo);
                         icourse.Update(data);
                         var message = new List<string>();
-                        message.Add("Course Updated Successfully");
+                        message.Add("تم تعديل المادة بنجاح");
                         return new CustomReponse<CourseDTo> { StatusCode = 200, Data = CourseDTo, Message = message };
                     }
                     else
                     {
                         var NotFoundmessage = new List<string>();
-                        NotFoundmessage.Add("Course Not Found");
+                        NotFoundmessage.Add("المادة غير موجودة");
                         return new CustomReponse<CourseDTo> { StatusCode = 404, Data = null, Message = NotFoundmessage };
                     }
 
@@ -130,9 +130,9 @@ namespace MobileApp.Controllers
             catch (UniqueConstraintException e)
             {
                 var message = new List<string>();
-                foreach (var student in e.ConstraintProperties)
+                foreach (var Course in e.ConstraintProperties)
                 {
-                    message.Add(student + " is Already Used");
+                    message.Add($"  موجودة بالفعل {Course} المادة ");
                 }
                 return new CustomReponse<CourseDTo> { StatusCode = 400, Data = null, Message = message };
 
@@ -156,11 +156,11 @@ namespace MobileApp.Controllers
                 icourse.Delete(id);
                 var result = mapper.Map<CourseDTo>(data);
                 var message = new List<string>();
-                message.Add("Data Deleted Successfully");
+                message.Add("تم حذف المادة بنجاح");
                 return new CustomReponse<CourseDTo> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("Course Not Found");
+            NotFoundmessage.Add("المادة غير موجودة");
             return new CustomReponse<CourseDTo> { StatusCode = 404, Data = null, Message = NotFoundmessage };
         }
 
@@ -172,7 +172,7 @@ namespace MobileApp.Controllers
             var data = icourse.Count(); ;
 
             var message = new List<string>();
-            message.Add($"there is {data} record in table Course");
+            message.Add($"  مواد {data} يوجد  ");
             return new CustomReponse<int> { StatusCode = 200, Data = data, Message = message };
 
         }

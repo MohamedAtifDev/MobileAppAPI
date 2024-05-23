@@ -4,13 +4,13 @@ namespace MobileApp.BL.DTO
 {
     public class CreateCourseDTO
     {
-        [Required(ErrorMessage = "Name is Required")]
-        [MaxLength(50, ErrorMessage = "Max Length is 50 Characater")]
-        [MinLength(3, ErrorMessage = "Min Length is 3 Characater")]
+        [Required(ErrorMessage = "اسم المادة مطلوب")]
+        [MaxLength(50, ErrorMessage = "افصي طول للاسم 50 حرف")]
+        [MinLength(3, ErrorMessage = "اقل طول للاسم 3 حروف")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Description is Required")]
-        [MaxLength(50, ErrorMessage = "Max Length is 50 Characater")]
-        [MinLength(3, ErrorMessage = "Min Length is 3 Characater")]
+        [Required(ErrorMessage = "وصف المادة مطلوب")]
+        [MaxLength(50, ErrorMessage = "افصي طول للوصف 50 حرف")]
+        [MinLength(3, ErrorMessage = "اقل طول للوصف 3 حروف")]
         public string Description { get; set; }
     }
 }

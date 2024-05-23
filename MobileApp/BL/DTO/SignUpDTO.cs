@@ -9,21 +9,22 @@ namespace MobileApp.BL.VM
 {
     public class SignUpDTO
     {
-        [EmailAddress(ErrorMessage = "Enter valid mail")]
-        [Required(ErrorMessage = "Email Required")]
+        [EmailAddress(ErrorMessage = "بريد الكترونى غير صالح")]
+        [Required(ErrorMessage = "البريد الالكترونى مطلوب")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Password Required")]
+        [Required(ErrorMessage = "كلمة المرور مطلوبة")]
         [DataType(DataType.Password)]
-        [MinLength(5, ErrorMessage = "Min length is 5")]
+   
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "Confirm Password Required")]
-        [Compare("Password",ErrorMessage = "Confirm Password Must Match Password")]
+        [Required(ErrorMessage = "تاكيد كلمة المرور مطلوب")]
+        [Compare("Password",ErrorMessage = "تاكيد كلمة المرور يجب ان يكون مثل كلمة السر")]
         public string ConfirmPassword { get; set; }
 
-        [Required]
-        [MinLength(5, ErrorMessage = "min length is 5")]
+        [Required(ErrorMessage = "اسم المستخدم مطلوب ")]
+        [MaxLength(50, ErrorMessage = "افصي طول للاسم 50 حرف")]
+        [MinLength(3, ErrorMessage = "اقل طول للاسم 3 حروف")]
         public string userName { get; set; }
     
     }

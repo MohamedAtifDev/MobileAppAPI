@@ -4,12 +4,12 @@ namespace GraduationProjectAPI.BL.VM
 {
     public class ResetPasswordDTO
     {
-        [Required(ErrorMessage="Password is required")]
+        [Required(ErrorMessage="كلمة المرور مطلوبة")]
         public string? password { get; set; }
 
-        [Required(ErrorMessage = "Email is required")]
+        [Required(ErrorMessage = "البريد الالكترونى مطلوب")]
         public string? Email { get; set; }
-        [Required(ErrorMessage = "Token is required")]
+        [Required(ErrorMessage = "رمز التحقق مطلوب")]
         public string? token { get; set; }
     }
 }

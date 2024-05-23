@@ -5816,11 +5816,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EL-masreya\\source\\repos\\MobileApp\\MobileApp\\MobileApp.csproj",
+      "projectUniqueName": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
       "projectName": "MobileApp",
-      "projectPath": "C:\\Users\\EL-masreya\\source\\repos\\MobileApp\\MobileApp\\MobileApp.csproj",
+      "projectPath": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
       "packagesPath": "C:\\Users\\EL-masreya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EL-masreya\\source\\repos\\MobileApp\\MobileApp\\obj\\",
+      "outputPath": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -52,6 +52,6 @@ namespace MobileApp.DAL.DataContext
         public DbSet<AcademicYearCourses> AcademicYearCourses { get; set; }
 
         public DbSet<StudentCourse> StudentCourses { get; set; }
-
+        public DbSet<UnAcademicCourse> unAcademicCourses { get; set; }
     }
 }

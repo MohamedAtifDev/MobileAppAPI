@@ -12,13 +12,15 @@ namespace MobileApp.BL.DTO
 
 
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "please Enter Password")]
+        [Required(ErrorMessage = "كلمة المرور مطلوبة")]
         public string Password { get; set; }
 
-        [Required(ErrorMessage ="please Enter user name")]
-        [MinLength(5, ErrorMessage = "min length is 5")]
+        [Required(ErrorMessage ="اسم المستخدم مطلوب ")]
+        [MaxLength(50, ErrorMessage = "افصي طول للاسم 50 حرف")]
+        [MinLength(3, ErrorMessage = "اقل طول للاسم 3 حروف")]
+
         public string UserName { get; set; }
 
-        public bool remember { get; set; }
+        public bool ?remember { get; set; }
     }
 }

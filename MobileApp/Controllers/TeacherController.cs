@@ -32,7 +32,7 @@ namespace MobileApp.Controllers
             var data = iteacher.GetAll();
             var result = mapper.Map<IEnumerable<TeacherDTO>>(data);
             var message = new List<string>();
-            message.Add("Data Retrieved Successfully");
+            message.Add("تم استرجاع البيانات بنجاح");
             return new CustomReponse<IEnumerable<TeacherDTO>> { StatusCode = 200, Data = result, Message = message };
 
 
@@ -47,11 +47,11 @@ namespace MobileApp.Controllers
             {
                 var result = mapper.Map<TeacherDTO>(data);
                 var message = new List<string>();
-                message.Add("Data Retrieved Successfully");
+                message.Add("تم استرجاع البيانات بنجاح");
                 return new CustomReponse<TeacherDTO> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("Teacher Not Found");
+            NotFoundmessage.Add("المعلم غير موجود");
             return new CustomReponse<TeacherDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
 
         }
@@ -67,7 +67,7 @@ namespace MobileApp.Controllers
                     var data = mapper.Map<Teacher>(TeacherDTO);
                     iteacher.Add(data);
                     var message = new List<string>();
-                    message.Add("Teacher Added Successfully");
+                    message.Add("تم اضافة المعلم بنجاح");
                     return new CustomReponse<CreateTeacherDTO> { StatusCode = 200, Data = TeacherDTO, Message = message };
                 }
                 var errors = ModelState.Values.SelectMany(v => v.Errors)
@@ -82,7 +82,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var Teacher in e.ConstraintProperties)
                 {
-                    message.Add(Teacher + " is Already Used");
+                    message.Add($"  موجود بالفعل{Teacher} ");
                 }
                 return new CustomReponse<CreateTeacherDTO> { StatusCode = 400, Data = null, Message = message };
 
@@ -109,13 +109,13 @@ namespace MobileApp.Controllers
                         var data = mapper.Map<Teacher>(TeacherDTO);
                         iteacher.Update(data);
                         var message = new List<string>();
-                        message.Add("Teacher Updated Successfully");
+                        message.Add("تم تعديل المعلم بنجاح");
                         return new CustomReponse<TeacherDTO> { StatusCode = 200, Data = TeacherDTO, Message = message };
                     }
                     else
                     {
                         var NotFoundmessage = new List<string>();
-                        NotFoundmessage.Add("Teacher Not Found");
+                        NotFoundmessage.Add("المعلم غير موجود");
                         return new CustomReponse<TeacherDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
                     }
                    
@@ -130,9 +130,9 @@ namespace MobileApp.Controllers
             catch (UniqueConstraintException e)
             {
                 var message = new List<string>();
-                foreach (var teacher in e.ConstraintProperties)
+                foreach (var Teacher in e.ConstraintProperties)
                 {
-                    message.Add(teacher + " is Already Used");
+                    message.Add($"  موجود بالفعل{Teacher} ");
                 }
                 return new CustomReponse<TeacherDTO> { StatusCode = 400, Data = null, Message = message };
 
@@ -156,11 +156,11 @@ namespace MobileApp.Controllers
                 iteacher.Delete(id);
                 var result = mapper.Map<TeacherDTO>(data);
                 var message = new List<string>();
-                message.Add("Data Deleted Successfully");
+                message.Add("تم حذف المعلم بنجاح");
                 return new CustomReponse<TeacherDTO> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("Teacher Not Found");
+            NotFoundmessage.Add("المعلم غير موجود");
             return new CustomReponse<TeacherDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
         }
 
@@ -172,7 +172,7 @@ namespace MobileApp.Controllers
             var data = iteacher.Count(); ;
 
             var message = new List<string>();
-            message.Add($"there is {data} record in table Teacher");
+            message.Add($"  معلمين {data} يوجد  ");
             return new CustomReponse<int> { StatusCode = 200, Data = data, Message = message };
 
         }

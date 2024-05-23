@@ -4,7 +4,7 @@ namespace GraduationProjectAPI.BL.VM
 {
     public class ForgetPasswordDTO
     {
-        [Required(ErrorMessage ="Email is Required")]
+        [Required(ErrorMessage ="البريد الالكترونى مطلوب ")]
         public string ?Email {  get; set; }
   
     }
