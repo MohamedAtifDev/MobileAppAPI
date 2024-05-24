@@ -17,5 +17,10 @@ namespace MobileApp.DAL.Entities
        
    public IEnumerable<AcademicYearCourses> AcademicYearCourses { get; set; }
 
+        public string AdminID {  get; set; }
+
+        [ForeignKey("AdminID")]
+        public AppUser user { get; set; }
+
     }
 }

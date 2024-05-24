@@ -5,5 +5,7 @@ namespace MobileApp.DAL.Entities
     public class AppUser:IdentityUser
     {
         public int Token {  get; set; }
+        public AcademicYear AcademicYear { get; set; }
+
     }
 }

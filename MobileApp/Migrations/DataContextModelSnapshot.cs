@@ -183,12 +183,19 @@ namespace MobileApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AdminID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AdminID")
+                        .IsUnique();
 
                     b.HasIndex("Name")
                         .IsUnique();
@@ -507,6 +514,17 @@ namespace MobileApp.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYear", b =>
+                {
+                    b.HasOne("MobileApp.DAL.Entities.AppUser", "user")
+                        .WithOne("AcademicYear")
+                        .HasForeignKey("MobileApp.DAL.Entities.AcademicYear", "AdminID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
+                });
+
             modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCourses", b =>
                 {
                     b.HasOne("MobileApp.DAL.Entities.AcademicYear", "AcademicYear")
@@ -556,6 +574,12 @@ namespace MobileApp.Migrations
             modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYear", b =>
                 {
                     b.Navigation("AcademicYearCourses");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.AppUser", b =>
+                {
+                    b.Navigation("AcademicYear")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Course", b =>

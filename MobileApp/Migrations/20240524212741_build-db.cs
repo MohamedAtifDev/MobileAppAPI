@@ -14,19 +14,6 @@ namespace MobileApp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AcademicYears",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AcademicYears", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
                 {
@@ -127,6 +114,20 @@ namespace MobileApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "unAcademicCourses",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_unAcademicCourses", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -143,6 +144,26 @@ namespace MobileApp.Migrations
                         name: "FK_AspNetRoleClaims_AspNetRoles_RoleId",
                         column: x => x.RoleId,
                         principalTable: "AspNetRoles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AcademicYears",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    AdminID = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AcademicYears", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AcademicYears_AspNetUsers_AdminID",
+                        column: x => x.AdminID,
+                        principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -294,9 +315,9 @@ namespace MobileApp.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "1", null, "User", null },
-                    { "2", null, "Admin", null },
-                    { "3", null, "SuperAdmin", null }
+                    { "1", null, "User", "User" },
+                    { "2", null, "Admin", "Admin" },
+                    { "3", null, "SuperAdmin", "SuperAdmin" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -313,6 +334,12 @@ namespace MobileApp.Migrations
                 name: "IX_AcademicYearCourses_YoutubeLink",
                 table: "AcademicYearCourses",
                 column: "YoutubeLink",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AcademicYears_AdminID",
+                table: "AcademicYears",
+                column: "AdminID",
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -388,6 +415,12 @@ namespace MobileApp.Migrations
                 table: "Teachers",
                 column: "Email",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_unAcademicCourses_Name",
+                table: "unAcademicCourses",
+                column: "Name",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -418,6 +451,9 @@ namespace MobileApp.Migrations
                 name: "Supervisors");
 
             migrationBuilder.DropTable(
+                name: "unAcademicCourses");
+
+            migrationBuilder.DropTable(
                 name: "AcademicYears");
 
             migrationBuilder.DropTable(
@@ -427,13 +463,13 @@ namespace MobileApp.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
                 name: "Courses");
 
             migrationBuilder.DropTable(
                 name: "Students");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
         }
     }
 }

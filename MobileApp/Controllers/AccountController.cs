@@ -17,6 +17,9 @@ using Newtonsoft.Json.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using MobileApp.BL.VM;
+using Microsoft.EntityFrameworkCore;
+using MobileApp;
+using System.Runtime.CompilerServices;
 
 
 namespace OnlineExamAPI.Controllers
@@ -26,14 +29,17 @@ namespace OnlineExamAPI.Controllers
     [EnableCors]
     public class AccountController : ControllerBase
     {
+        private readonly DataContext dataContext;
         private readonly UserManager<AppUser> usermanager;
         private readonly SignInManager<AppUser> signInManager;
         private readonly RoleManager<IdentityRole> roleManager;
         private readonly IMapper mapper;
         private readonly IPasswordHasher<AppUser> hasher;
+        
 
-        public AccountController(UserManager<AppUser> usermanager, RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager,IMapper mapper,IPasswordHasher<AppUser> hasher)
+        public AccountController(DataContext dataContext,UserManager<AppUser> usermanager, RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager,IMapper mapper,IPasswordHasher<AppUser> hasher)
         {
+            this.dataContext = dataContext;
             this.usermanager = usermanager;
             this.signInManager = signInManager;
             this.mapper = mapper;
@@ -41,24 +47,9 @@ namespace OnlineExamAPI.Controllers
             this.roleManager = roleManager;
         }
 
-        //[HttpGet]
-        //[Route("~/Account/getuser/{id}")]
-        //public async Task<Response<AppUser>> getuser(string id)
-        //{
-        //    var user = await usermanager.FindByIdAsync(id);
-        //  if(user == null)
-        //    {
-        //        return new Response<AppUser> { statusCode = 200, message = "No user", result = null };
-
-        //    }
-        //    else
-        //    {
-        //        return new Response<AppUser> { statusCode = 200, message = "User is exist", result = user };
-        //    }
-        //}
         [HttpPost]
         [Route("AdminSignUp")]
-        public async Task<CustomReponse<UserDTO>> AdminSignUp([FromBody] SignUpDTO sign)
+        public async Task<CustomReponse<UserDTO>> AdminSignUp([FromBody] AdminSignUpDTO sign)
         {
             try
             {
@@ -68,41 +59,60 @@ namespace OnlineExamAPI.Controllers
                     var user = new AppUser
                     {
                         Email = sign.Email,
-                        UserName = sign.userName,
+                        UserName = sign.UserName,
+                        PhoneNumber=sign.Phone,
+                       
+
+                        
 
                     };
+
+
+                    var data = await usermanager.FindByEmailAsync(sign.Email);
+                    if (data != null)
+                    {
+                        message.Add("البريد الالكترونى مسجل بالفعل");
+                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = message };
+                    }
+                    var data2 = await usermanager.FindByNameAsync(sign.UserName);
+                    if (data2 != null)
+                    {
+                        message.Add("اسم المستخدم مسجل بالفعل");
+                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = message };
+                    }
                     var result = await usermanager.CreateAsync(user, sign.Password);
-
-                    if (result.Succeeded)
-                    {
-                        var role = await roleManager.FindByIdAsync("2");
-                        var AddToRole = await usermanager.AddToRoleAsync(user, role.Name);
-
-                        if (AddToRole.Succeeded)
+                        if (result.Succeeded)
                         {
-                            message.Add("تم الاشتراك بنجاح");
+                            var role = await roleManager.FindByIdAsync("2");
+                            var AddToRole = await usermanager.AddToRoleAsync(user, role.Name);
 
-
-                            var userdata = new UserDTO
+                            if (AddToRole.Succeeded)
                             {
-                                Email = user.Email,
-                                UserName = user.Email,
-                                RoleName = "Admin"
-                            };
-                            return new CustomReponse<UserDTO> { StatusCode = 200, Message = message, Data = userdata };
-                        }
+                                message.Add("تم الاشتراك بنجاح");
 
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
+
+                                var userdata = new UserDTO
+                                {
+                                    Email = user.Email,
+                                    UserName = user.Email,
+                                    RoleName = "Admin"
+                                };
+                                return new CustomReponse<UserDTO> { StatusCode = 200, Message = message, Data = userdata };
+                            }
+
+                        }
+                        else
                         {
-                            message.Add(error.Description);
+                            foreach (var error in result.Errors)
+                            {
+                                message.Add(error.Description);
+                            }
+
+                            return new CustomReponse<UserDTO> { StatusCode = 400, Message = message, Data = null };
+
                         }
-                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = message, Data = user as UserDTO };
-
-                    }
-
+                    
+                    
                 }
 
 
@@ -138,44 +148,58 @@ namespace OnlineExamAPI.Controllers
                 var message = new List<string>();
                 if (ModelState.IsValid)
                 {
+                   var data=await usermanager.FindByEmailAsync(sign.Email);
+                    if (data != null)
+                    {
+                        message.Add("البريد الالكترونى مسجل بالفعل");
+                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = message };
+                    }
+                    var data2 = await usermanager.FindByNameAsync(sign.userName);
+                    if (data2 != null)
+                    {
+                        message.Add("اسم المستخدم مسجل بالفعل");
+                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = message };
+                    }
                     var user = new AppUser
                     {
                         Email = sign.Email,
                         UserName = sign.userName,
 
                     };
-                    var result = await usermanager.CreateAsync(user,sign.Password);
+                  
 
-                    if (result.Succeeded)
-                    {
-                        var role = await roleManager.FindByIdAsync("1");
-                        var AddToRole = await usermanager.AddToRoleAsync(user,role.Name);
+                        var result = await usermanager.CreateAsync(user, sign.Password);
 
-                        if (AddToRole.Succeeded)
+                        if (result.Succeeded)
                         {
-                            message.Add("تم الاشتراك بنجاح");
+                            var role = await roleManager.FindByIdAsync("1");
+                            var AddToRole = await usermanager.AddToRoleAsync(user, role.Name);
 
-
-                            var userdata = new UserDTO
+                            if (AddToRole.Succeeded)
                             {
-                                Email = user.Email,
-                                UserName = user.UserName,
-                                RoleName = "User"
-                            };
-                            return new CustomReponse<UserDTO> { StatusCode = 200, Message = message, Data = userdata };
+                                message.Add("تم الاشتراك بنجاح");
+
+
+                                var userdata = new UserDTO
+                                {
+                                    Email = user.Email,
+                                    UserName = user.UserName,
+                                    RoleName = "User"
+                                };
+                                return new CustomReponse<UserDTO> { StatusCode = 200, Message = message, Data = userdata };
+                            }
+
+                        }
+                        else
+                        {
+                            foreach (var error in result.Errors)
+                            {
+                                message.Add(error.Description);
+                            }
+                            return new CustomReponse<UserDTO> { StatusCode = 400, Message = message, Data = null };
+
                         }
                    
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
-                        {
-                            message.Add(error.Description);
-                        }
-                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = message, Data = user as UserDTO };
-
-                    }
-
                 }
 
             
@@ -211,9 +235,10 @@ namespace OnlineExamAPI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var result = await signInManager.PasswordSignInAsync(sign.UserName, sign.Password, sign.remember == null ? false :true, false);
+                    var user = await usermanager.FindByEmailAsync(sign.Email);
+                    var result = await signInManager.PasswordSignInAsync(user.UserName, sign.Password, sign.remember == null ? false :true, false);
              
-                    var user=await usermanager.FindByNameAsync(sign.UserName);
+                 
                    
 
                     if (result.Succeeded)
@@ -240,7 +265,7 @@ namespace OnlineExamAPI.Controllers
                                                {
                                "كلمه المرور او البريد الالكترونى غير صحيح"
                                                }.ToList();
-                            return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
+                            return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = null};
                         }
                       
                     }
@@ -250,7 +275,7 @@ namespace OnlineExamAPI.Controllers
                        {
                                     "كلمه المرور او البريد الالكترونى غير صحيح"
                        }.ToList();
-                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
+                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data =null };
 
                     }
 
@@ -288,9 +313,10 @@ namespace OnlineExamAPI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var result = await signInManager.PasswordSignInAsync(sign.UserName, sign.Password, sign.remember==null ?false :true, false);
+                    var user =await  usermanager.FindByEmailAsync(sign.Email);
+                    var result = await signInManager.PasswordSignInAsync(user.UserName, sign.Password, sign.remember==null ?false :true, false);
 
-                    var user = await usermanager.FindByNameAsync(sign.UserName);
+              
 
 
                     if (result.Succeeded)
@@ -317,7 +343,7 @@ namespace OnlineExamAPI.Controllers
                                                {
                                     "كلمه المرور او البريد الالكترونى غير صحيح"
                                                }.ToList();
-                            return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
+                            return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = null};
                         }
 
                     }
@@ -327,7 +353,7 @@ namespace OnlineExamAPI.Controllers
                        {
                                     "كلمه المرور او البريد الالكترونى غير صحيح"
                        }.ToList();
-                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = user as UserDTO };
+                        return new CustomReponse<UserDTO> { StatusCode = 400, Message = invalidmessages, Data = null };
 
                     }
 
@@ -463,6 +489,174 @@ namespace OnlineExamAPI.Controllers
                 return new CustomReponse<string> { StatusCode = 400, Data = null, Message = errors };
             }
         }
+
+        [HttpPut]
+        [Route("UpdateAdmin")]
+
+        public async Task<CustomReponse<AppUser>> UpdateAdmin([FromBody]UpdateUserDTO App)
+        {
+            var message = new List<string>();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var userdata = dataContext.Users.Where(a => a.Id == App.Id).AsNoTracking().FirstOrDefault();
+                    var user = dataContext.Users.Where(a => a.Email == App.Email).AsNoTracking().FirstOrDefault();
+                    var user2= dataContext.Users.Where(a => a.UserName == App.UserName).AsNoTracking().FirstOrDefault();
+                    if (userdata is not null)
+                    {
+                        if (user is not null)
+                        {
+                            if (user.Id != App.Id)
+                            {
+                                message.Add("البريد الالكترونى موجود بالفعل");
+                                return new CustomReponse<AppUser> { StatusCode = 400, Data = user, Message = message };
+                            }
+                        }
+
+                        else if (user2 is not null && user2.Id!= App.Id)
+                        {
+                            message.Add("اسم المستخدم موجود بالفعل");
+                            return new CustomReponse<AppUser> { StatusCode = 400, Data = user, Message = message };
+                        }
+                        else
+                        {
+                          var checker=new CustomPasswordValidator<AppUser>();
+                             var result=await checker.ValidateAsync(usermanager, userdata, App.Password);
+                            if (result != null)
+                            {
+                                foreach (var item in result.Errors)
+                                {
+                                    message.Add(item.Description);
+                                }
+                                return new CustomReponse<AppUser> { StatusCode = 400, Data = user, Message = message };
+
+                            }
+                            userdata.Email = App.Email;
+                            userdata.PhoneNumber = App.Phone;
+                            userdata.UserName = App.UserName;
+                            userdata.PasswordHash = hasher.HashPassword(userdata, App.ConfirmPassword);
+                        
+                            dataContext.ChangeTracker.Clear();
+                            dataContext.Users.Update(userdata);
+                            dataContext.SaveChanges();
+
+                            message.Add("تم تعديل المشرف بنجاح");
+                            return new CustomReponse<AppUser> { StatusCode = 200, Data = user, Message = message };
+
+                        }
+
+                        }
+
+                    
+                    else
+                    {
+
+                        message.Add("مشرف غير موجود");
+                        return new CustomReponse<AppUser> { StatusCode = 404, Data = user, Message = message };
+                    }
+
+
+                }
+                var errors = ModelState.Values.SelectMany(v => v.Errors)
+                        .Select(e => e.ErrorMessage)
+                        .ToList();
+                return new CustomReponse<AppUser> { StatusCode = 400, Data = null, Message = errors };
+
+
+            }
+            catch (Exception ex)
+            {
+                message.Add(ex.InnerException.Message);
+                return new CustomReponse<AppUser> { StatusCode = 500, Message = message, Data = null };
+
+            }
+        }
+
+
+
+        [HttpGet]
+        [Route("GetAllAdmins")]
+        public async Task<CustomReponse<IEnumerable<AppUser>>> GetAllAdmins()
+        {
+            var admins = new List<AppUser>();
+            var data = usermanager.Users.AsNoTracking().ToList();
+            foreach (var item in data)
+            {
+                var res = await usermanager.IsInRoleAsync(item, "Admin");
+                if (res)
+                {
+                    admins.Add(item);
+
+                }
+            }
+            var message = new string[]
+            {
+                "تم استرجاع بيانات المشرفين"
+            }.ToList();
+            return new CustomReponse<IEnumerable<AppUser>> { StatusCode = 400, Data = admins, Message = message };
+
+        }
+
+        [HttpGet]
+        [Route("GetById/{id}")]
+        public async Task<CustomReponse<AppUser>> GetById(string id)
+        {
+            var data = usermanager.Users.Where(a => a.Id == id).AsNoTracking().ToList().ElementAt(0);
+          
+            var message = new string[]
+            {
+                "  تم استرجاع البيانات بنجاح "
+            }.ToList();
+            return new CustomReponse<AppUser>{ StatusCode = 200, Data = data, Message = message };
+
+        }
+
+
+        [HttpDelete]
+        [Route("Delete/{id}")]
+        public async Task<CustomReponse<AppUser>> Delete(string id)
+        {
+            dataContext.Users.Remove(dataContext.Users.Find(id));
+            dataContext.SaveChanges();
+
+            var message = new string[]
+            {
+                "  تم الحذف بنجاح "
+            }.ToList();
+            return new CustomReponse<AppUser> { StatusCode = 200, Data = null, Message = message };
+
+        }
+
+
+
+
+
+
+
+        [HttpGet]
+        [Route("GetAllUsers")]
+        public async Task<CustomReponse<IEnumerable<AppUser>>> GetAllUsers()
+        {
+            var Users = new List<AppUser>();
+            var data = usermanager.Users.AsNoTracking().ToList();
+            foreach (var item in data)
+            {
+                var res = await usermanager.IsInRoleAsync(item, "User");
+                if (res)
+                {
+                    Users.Add(item);
+
+                }
+            }
+            var message = new string[]
+            {
+                "تم استرجاع بيانات المستخدمين"
+            }.ToList();
+            return new CustomReponse<IEnumerable<AppUser>> { StatusCode = 400, Data = Users, Message = message };
+
+        }
+
 
 
         private int GenereateToken()

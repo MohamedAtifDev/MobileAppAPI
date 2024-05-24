@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
-using MobileApp.DAL.Entities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace MobileApp.BL.DTO
 {
-    public class UserDTO
+    public class UpdateUserDTO
     {
         [Required(ErrorMessage = "الرقم التعريفي مطلوب")]
         public string Id { get; set; }
@@ -20,8 +18,11 @@ namespace MobileApp.BL.DTO
         [Required(ErrorMessage = "البريد الالكترونى مطلوب")]
         [DataType(DataType.EmailAddress, ErrorMessage = "بريد الكترونى غير صالح")]
         public string? Email { get; set; }
-        public string ?RoleName {  get; set; }
+        public string Password { get; set; }
 
-     
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "تاكيد كلمة المرور مطلوب")]
+        [Compare("Password", ErrorMessage = "تاكيد كلمة المرور يجب ان يكون مثل كلمة السر")]
+        public string ConfirmPassword { get; set; }
     }
 }
