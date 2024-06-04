@@ -21,6 +21,17 @@ namespace MobileApp.BL.DTO
         [Required(ErrorMessage = "البريد الالكترونى مطلوب")]
         [DataType(DataType.EmailAddress, ErrorMessage = "بريد الكترونى غير صالح")]
 
+
         public string? Email { get; set; }
+
+        [Required(ErrorMessage = "لينك الزووم مطلوب")]
+        public string ZoomLink { get; set; }
+
+
+        public string ImgName { get; set; }
+
+
+        [Required(ErrorMessage = "صورة المعلم مطلوبة")]
+        public IFormFile Img { get; set; }
     }
 }

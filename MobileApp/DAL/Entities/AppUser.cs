@@ -7,5 +7,10 @@ namespace MobileApp.DAL.Entities
         public int Token {  get; set; }
         public AcademicYear AcademicYear { get; set; }
 
+        
+        public  string DisplayName { get; set; }
+
+        public IEnumerable<StudentCourse> StudentCourses { get; set; }
+
     }
 }

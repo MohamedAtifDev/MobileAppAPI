@@ -22,7 +22,9 @@ namespace MobileApp.DAL.Entities
 
         public IEnumerable<AcademicYearCourses> academicYearCourses { get; set; }
 
-        public IEnumerable<StudentCourse> StudentCourses { get; set; }
+
+
+        public string ImgName {  get; set; }
 
        
 

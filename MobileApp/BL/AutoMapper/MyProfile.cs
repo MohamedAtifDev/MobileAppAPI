@@ -8,15 +8,24 @@ namespace MobileApp.BL.AutoMapper
     {
         public MyProfile()
         {
-            CreateMap<StudentDTO, Student>().ReverseMap();
+       
             CreateMap<CreateStudentDTO, Teacher>().ReverseMap();
             CreateMap<TeacherDTO, Teacher>().ReverseMap();
             CreateMap<CreateTeacherDTO, Teacher>().ReverseMap();
-            CreateMap<SupervisorDTO, Supervisor>().ReverseMap();
-            CreateMap<CreateSupervisorDTO, Supervisor>().ReverseMap();
+            CreateMap<AcademicYearDTO, AcademicYear>().ReverseMap();
+            CreateMap<CreateAcademicYearDTO, AcademicYear>().ReverseMap();
+            CreateMap<UnAcademicCourse, UnAcademicCourseDTO>().ReverseMap();
+            CreateMap<CreateUnAcademicCourseDTO, UnAcademicCourse>().ReverseMap();
             CreateMap<CourseDTo, Course>().ReverseMap();
             CreateMap<CreateCourseDTO, Course>().ReverseMap();
-
+            CreateMap<CreateGroupDTO, Group>().ReverseMap();
+            CreateMap<GroupDTO,Group>().ReverseMap();
+            CreateMap<StudentCourseDTO, StudentCourse>().ReverseMap();
+            CreateMap<AcademicYearCourses, AcademicYearCoursesDTO>().ReverseMap();
+            CreateMap<UpdateAcademicYearCoursesDTO, AcademicYearCourses>().ReverseMap();
+            CreateMap<AcademicYearCoursesTeachers, AcademicYearCoursesTeachersDTO>().ReverseMap();
+            CreateMap<CreateCourseMaterialLinksDTO, CourseMaterialLinks>().ReverseMap();
+            CreateMap<CourseMaterialLinksDTO, CourseMaterialLinks>().ReverseMap();
         }
     }
 }

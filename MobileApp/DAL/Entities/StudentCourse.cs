@@ -4,14 +4,26 @@ namespace MobileApp.DAL.Entities
 {
     public class StudentCourse
     {
-        public int CourseId { get; set; }
-        public int StudentId { get; set;}
+   
+        public string StudentId { get; set;}
 
         [ForeignKey(nameof(StudentId))]
-        public Student Student { get; set;}
-        [ForeignKey(nameof(CourseId))]
-        public Course Course { get; set;}
+        public AppUser Student { get; set;}
 
+        public int AcademicYearId { get; set; }
+
+        public int CourseId { get; set; }
+
+
+
+
+        public int TeacherId { get; set; }
+
+
+        [ForeignKey("AcademicYearId,CourseId,TeacherId")]
+
+
+        public AcademicYearCoursesTeachers academicYearCoursesTreachers { get; set; }
         public DateTime AssignDate {  get; set; }   
     }
 }

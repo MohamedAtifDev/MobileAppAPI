@@ -23,9 +23,12 @@ namespace MobileApp.DAL.Entities
 
         public string Email { get; set; }
 
-        public IEnumerable<AcademicYearCourses> AcademicYearCourses { get; set; }
+        public string ZoomLink {  get; set; }
 
+        public string ImgName { get; set; }
+        public IEnumerable<AcademicYearCoursesTeachers>? academicYearCoursesTeachers { get; set; }
 
+        public IEnumerable<UnAcademicCourse> ?unAcademicCourses { get; set; }
 
     }
 }

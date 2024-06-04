@@ -33,6 +33,7 @@ namespace MobileApp.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Token = table.Column<int>(type: "int", nullable: false),
+                    DisplayName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -60,7 +61,8 @@ namespace MobileApp.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    ImgName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -68,33 +70,18 @@ namespace MobileApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Students",
+                name: "groups",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    Price = table.Column<double>(type: "float", nullable: false),
+                    NumberOfStudents = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Students", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Supervisors",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Supervisors", x => x.Id);
+                    table.PrimaryKey("PK_groups", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -106,25 +93,13 @@ namespace MobileApp.Migrations
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ZoomLink = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImgName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Teachers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "unAcademicCourses",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_unAcademicCourses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -155,7 +130,7 @@ namespace MobileApp.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    AdminID = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    AdminID = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -165,7 +140,7 @@ namespace MobileApp.Migrations
                         column: x => x.AdminID,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateTable(
@@ -254,28 +229,25 @@ namespace MobileApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "StudentCourses",
+                name: "unAcademicCourses",
                 columns: table => new
                 {
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    StudentId = table.Column<int>(type: "int", nullable: false),
-                    AssignDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: true),
+                    ImgName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_StudentCourses", x => new { x.CourseId, x.StudentId });
+                    table.PrimaryKey("PK_unAcademicCourses", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_StudentCourses_Courses_CourseId",
-                        column: x => x.CourseId,
-                        principalTable: "Courses",
+                        name: "FK_unAcademicCourses_Teachers_TeacherId",
+                        column: x => x.TeacherId,
+                        principalTable: "Teachers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_StudentCourses_Students_StudentId",
-                        column: x => x.StudentId,
-                        principalTable: "Students",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateTable(
@@ -283,13 +255,11 @@ namespace MobileApp.Migrations
                 columns: table => new
                 {
                     AcademicYearId = table.Column<int>(type: "int", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    TeacherId = table.Column<int>(type: "int", nullable: false),
-                    YoutubeLink = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    CourseId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AcademicYearCourses", x => new { x.CourseId, x.AcademicYearId });
+                    table.PrimaryKey("PK_AcademicYearCourses", x => new { x.AcademicYearId, x.CourseId });
                     table.ForeignKey(
                         name: "FK_AcademicYearCourses_AcademicYears_AcademicYearId",
                         column: x => x.AcademicYearId,
@@ -302,10 +272,82 @@ namespace MobileApp.Migrations
                         principalTable: "Courses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AcademicYearCoursesTeachers",
+                columns: table => new
+                {
+                    AcademicYearId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: false),
+                    YoutubeLink = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    startDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    endDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NumberOfLessons = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AcademicYearCoursesTeachers", x => new { x.AcademicYearId, x.CourseId, x.TeacherId });
                     table.ForeignKey(
-                        name: "FK_AcademicYearCourses_Teachers_TeacherId",
+                        name: "FK_AcademicYearCoursesTeachers_AcademicYearCourses_AcademicYearId_CourseId",
+                        columns: x => new { x.AcademicYearId, x.CourseId },
+                        principalTable: "AcademicYearCourses",
+                        principalColumns: new[] { "AcademicYearId", "CourseId" },
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_AcademicYearCoursesTeachers_Teachers_TeacherId",
                         column: x => x.TeacherId,
                         principalTable: "Teachers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CourseMaterialLinks",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    url = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AcademicYearId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CourseMaterialLinks", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CourseMaterialLinks_AcademicYearCoursesTeachers_AcademicYearId_CourseId_TeacherId",
+                        columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId },
+                        principalTable: "AcademicYearCoursesTeachers",
+                        principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId" },
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "StudentCourses",
+                columns: table => new
+                {
+                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    AcademicYearId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: false),
+                    AssignDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_StudentCourses", x => new { x.CourseId, x.StudentId, x.AcademicYearId, x.TeacherId });
+                    table.ForeignKey(
+                        name: "FK_StudentCourses_AcademicYearCoursesTeachers_AcademicYearId_CourseId_TeacherId",
+                        columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId },
+                        principalTable: "AcademicYearCoursesTeachers",
+                        principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId" },
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_StudentCourses_AspNetUsers_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -321,18 +363,18 @@ namespace MobileApp.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AcademicYearCourses_AcademicYearId",
+                name: "IX_AcademicYearCourses_CourseId",
                 table: "AcademicYearCourses",
-                column: "AcademicYearId");
+                column: "CourseId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AcademicYearCourses_TeacherId",
-                table: "AcademicYearCourses",
+                name: "IX_AcademicYearCoursesTeachers_TeacherId",
+                table: "AcademicYearCoursesTeachers",
                 column: "TeacherId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AcademicYearCourses_YoutubeLink",
-                table: "AcademicYearCourses",
+                name: "IX_AcademicYearCoursesTeachers_YoutubeLink",
+                table: "AcademicYearCoursesTeachers",
                 column: "YoutubeLink",
                 unique: true);
 
@@ -340,7 +382,8 @@ namespace MobileApp.Migrations
                 name: "IX_AcademicYears_AdminID",
                 table: "AcademicYears",
                 column: "AdminID",
-                unique: true);
+                unique: true,
+                filter: "[AdminID] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AcademicYears_Name",
@@ -388,27 +431,31 @@ namespace MobileApp.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_CourseMaterialLinks_AcademicYearId_CourseId_TeacherId",
+                table: "CourseMaterialLinks",
+                columns: new[] { "AcademicYearId", "CourseId", "TeacherId" });
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Courses_Name",
                 table: "Courses",
                 column: "Name",
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_groups_Name",
+                table: "groups",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_StudentCourses_AcademicYearId_CourseId_TeacherId",
+                table: "StudentCourses",
+                columns: new[] { "AcademicYearId", "CourseId", "TeacherId" });
+
+            migrationBuilder.CreateIndex(
                 name: "IX_StudentCourses_StudentId",
                 table: "StudentCourses",
                 column: "StudentId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Students_Email",
-                table: "Students",
-                column: "Email",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Supervisors_Email",
-                table: "Supervisors",
-                column: "Email",
-                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Teachers_Email",
@@ -421,14 +468,16 @@ namespace MobileApp.Migrations
                 table: "unAcademicCourses",
                 column: "Name",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_unAcademicCourses_TeacherId",
+                table: "unAcademicCourses",
+                column: "TeacherId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "AcademicYearCourses");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -445,28 +494,34 @@ namespace MobileApp.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "StudentCourses");
+                name: "CourseMaterialLinks");
 
             migrationBuilder.DropTable(
-                name: "Supervisors");
+                name: "groups");
+
+            migrationBuilder.DropTable(
+                name: "StudentCourses");
 
             migrationBuilder.DropTable(
                 name: "unAcademicCourses");
 
             migrationBuilder.DropTable(
-                name: "AcademicYears");
+                name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "AcademicYearCoursesTeachers");
+
+            migrationBuilder.DropTable(
+                name: "AcademicYearCourses");
 
             migrationBuilder.DropTable(
                 name: "Teachers");
 
             migrationBuilder.DropTable(
-                name: "AspNetRoles");
+                name: "AcademicYears");
 
             migrationBuilder.DropTable(
                 name: "Courses");
-
-            migrationBuilder.DropTable(
-                name: "Students");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

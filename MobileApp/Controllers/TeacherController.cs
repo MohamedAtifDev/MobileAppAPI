@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MobileApp.BL.CustomReponse;
 using MobileApp.BL.DTO;
 using MobileApp.BL.Interfaces;
+using MobileApp.BL.services;
 using MobileApp.DAL.DataContext;
 using MobileApp.DAL.Entities;
 
@@ -65,6 +66,8 @@ namespace MobileApp.Controllers
                 if (ModelState.IsValid)
                 {
                     var data = mapper.Map<Teacher>(TeacherDTO);
+                    var imgname = fileUploader.upload("Images", TeacherDTO.Img);
+                    data.ImgName = imgname;
                     iteacher.Add(data);
                     var message = new List<string>();
                     message.Add("تم اضافة المعلم بنجاح");
@@ -107,6 +110,8 @@ namespace MobileApp.Controllers
                     if(entity is not null)
                     {
                         var data = mapper.Map<Teacher>(TeacherDTO);
+                        var imgname = fileUploader.upload("Images", TeacherDTO.Img);
+                        data.ImgName = imgname;
                         iteacher.Update(data);
                         var message = new List<string>();
                         message.Add("تم تعديل المعلم بنجاح");
@@ -153,6 +158,7 @@ namespace MobileApp.Controllers
             var data = iteacher.GetById(id);
             if (data is not null)
             {
+                fileUploader.delete(data.ImgName, "Images");
                 iteacher.Delete(id);
                 var result = mapper.Map<TeacherDTO>(data);
                 var message = new List<string>();

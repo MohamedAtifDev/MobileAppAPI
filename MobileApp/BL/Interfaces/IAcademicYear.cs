@@ -1,4 +1,5 @@
-﻿using MobileApp.DAL.Entities;
+﻿using MobileApp.BL.DTO;
+using MobileApp.DAL.Entities;
 
 namespace MobileApp.BL.Interfaces
 {
@@ -12,5 +13,9 @@ namespace MobileApp.BL.Interfaces
         AcademicYear GetById(int id);
 
         int Count();
+         IEnumerable<AcademicYearDetails> GetAllAcademicYearWithRelatedCoursesAndTeachers();
+
+        IEnumerable<AcademicYearDetails> GetAcademicYearWithRelatedCoursesAndTeachers(int id);
+
     }
 }

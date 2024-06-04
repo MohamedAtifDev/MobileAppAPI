@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MobileApp.DAL.Entities
 {
 
-    [Index("YoutubeLink", IsUnique = true)]
+  
     public class AcademicYearCourses
     {
         public int AcademicYearId {  get; set; }
@@ -15,14 +15,9 @@ namespace MobileApp.DAL.Entities
         public AcademicYear AcademicYear { get; set; }
         [ForeignKey(nameof(CourseId))]
         public Course Course { get; set; }
+        public IEnumerable<AcademicYearCoursesTeachers> AcademicYearCoursesTeachers { get; set; }
 
 
-        public int TeacherId { get; set; }
-
-
-        [ForeignKey("TeacherId")]
-        public Teacher Teacher { get; set; }
-
-        public string YoutubeLink { get; set; }
+  
     }
 }

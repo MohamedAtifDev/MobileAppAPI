@@ -17,5 +17,9 @@ namespace MobileApp.DAL.Entities
         [StringLength(100)]
         public string Description { get; set; }
 
+        public int? TeacherId {  get; set; }
+        public string ImgName {  get; set; }
+        public Teacher? Teacher {  get; set; }
+
     }
 }

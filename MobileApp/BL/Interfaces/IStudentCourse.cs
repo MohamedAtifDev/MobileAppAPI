@@ -1,4 +1,5 @@
-﻿using MobileApp.DAL.Entities;
+﻿using MobileApp.BL.DTO;
+using MobileApp.DAL.Entities;
 
 namespace MobileApp.BL.Interfaces
 {
@@ -6,11 +7,15 @@ namespace MobileApp.BL.Interfaces
     {
         void Add(StudentCourse StudentCourse);
         void Update(StudentCourse StudentCourse);
-        void Delete(int CourseId,int StudentId);
-
+      
+        void Delete(StudentCourse studentCourse);
         IEnumerable<StudentCourse> GetAll();
-        StudentCourse GetById(int CourseId, int StudentId);
+      
 
+        StudentCourse GetById(StudentCourse studentCourse);
+        IEnumerable<MyCoursesDTO> GetStudentCourses(string StudentId);
+
+        IEnumerable<MyCoursesDTO> GetStudentCoursesSchedules(string StudentId);
         int Count();
     }
 }

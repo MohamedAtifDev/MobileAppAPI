@@ -12,8 +12,8 @@ using MobileApp.DAL.DataContext;
 namespace MobileApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240524212741_build-db")]
-    partial class builddb
+    [Migration("20240603121035_build-db3")]
+    partial class builddb3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -187,7 +187,6 @@ namespace MobileApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AdminID")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
@@ -198,7 +197,8 @@ namespace MobileApp.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AdminID")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[AdminID] IS NOT NULL");
 
                     b.HasIndex("Name")
                         .IsUnique();
@@ -208,29 +208,51 @@ namespace MobileApp.Migrations
 
             modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCourses", b =>
                 {
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
                     b.Property<int>("AcademicYearId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AcademicYearId", "CourseId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("AcademicYearCourses");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", b =>
+                {
+                    b.Property<int>("AcademicYearId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
                     b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberOfLessons")
                         .HasColumnType("int");
 
                     b.Property<string>("YoutubeLink")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("CourseId", "AcademicYearId");
+                    b.Property<DateTime>("endDate")
+                        .HasColumnType("datetime2");
 
-                    b.HasIndex("AcademicYearId");
+                    b.Property<DateTime>("startDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("AcademicYearId", "CourseId", "TeacherId");
 
                     b.HasIndex("TeacherId");
 
                     b.HasIndex("YoutubeLink")
                         .IsUnique();
 
-                    b.ToTable("AcademicYearCourses");
+                    b.ToTable("AcademicYearCoursesTeachers");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.AppUser", b =>
@@ -243,6 +265,10 @@ namespace MobileApp.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DisplayName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -314,6 +340,10 @@ namespace MobileApp.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("ImgName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -327,7 +357,7 @@ namespace MobileApp.Migrations
                     b.ToTable("Courses");
                 });
 
-            modelBuilder.Entity("MobileApp.DAL.Entities.Student", b =>
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseMaterialLinks", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -335,26 +365,90 @@ namespace MobileApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Email")
+                    b.Property<int>("AcademicYearId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AcademicYearId", "CourseId", "TeacherId");
+
+                    b.ToTable("CourseMaterialLinks");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.Group", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
+                    b.Property<int>("NumberOfStudents")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Email")
+                    b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Students");
+                    b.ToTable("groups");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.Schedules", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AcademicYearId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Day")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeOnly>("Time")
+                        .HasColumnType("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AcademicYearId", "CourseId", "TeacherId");
+
+                    b.ToTable("schedules");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.StudentCourse", b =>
@@ -362,47 +456,25 @@ namespace MobileApp.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<int>("StudentId")
+                    b.Property<string>("StudentId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AcademicYearId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("AssignDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("CourseId", "StudentId");
+                    b.HasKey("CourseId", "StudentId", "AcademicYearId", "TeacherId");
 
                     b.HasIndex("StudentId");
 
+                    b.HasIndex("AcademicYearId", "CourseId", "TeacherId");
+
                     b.ToTable("StudentCourses");
-                });
-
-            modelBuilder.Entity("MobileApp.DAL.Entities.Supervisor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Email")
-                        .IsUnique();
-
-                    b.ToTable("Supervisors");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Teacher", b =>
@@ -422,6 +494,10 @@ namespace MobileApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ImgName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -431,6 +507,10 @@ namespace MobileApp.Migrations
                         .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
+
+                    b.Property<string>("ZoomLink")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -453,15 +533,24 @@ namespace MobileApp.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("ImgName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int?>("TeacherId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Name")
                         .IsUnique();
+
+                    b.HasIndex("TeacherId");
 
                     b.ToTable("unAcademicCourses");
                 });
@@ -522,8 +611,7 @@ namespace MobileApp.Migrations
                     b.HasOne("MobileApp.DAL.Entities.AppUser", "user")
                         .WithOne("AcademicYear")
                         .HasForeignKey("MobileApp.DAL.Entities.AcademicYear", "AdminID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("user");
                 });
@@ -542,36 +630,79 @@ namespace MobileApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("AcademicYear");
+
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", b =>
+                {
                     b.HasOne("MobileApp.DAL.Entities.Teacher", "Teacher")
-                        .WithMany("AcademicYearCourses")
+                        .WithMany("academicYearCoursesTeachers")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("AcademicYear");
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCourses", "AcademicYearCourses")
+                        .WithMany("AcademicYearCoursesTeachers")
+                        .HasForeignKey("AcademicYearId", "CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Course");
+                    b.Navigation("AcademicYearCourses");
 
                     b.Navigation("Teacher");
                 });
 
-            modelBuilder.Entity("MobileApp.DAL.Entities.StudentCourse", b =>
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseMaterialLinks", b =>
                 {
-                    b.HasOne("MobileApp.DAL.Entities.Course", "Course")
-                        .WithMany("StudentCourses")
-                        .HasForeignKey("CourseId")
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
+                        .WithMany("CourseMaterialLinks")
+                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MobileApp.DAL.Entities.Student", "Student")
+                    b.Navigation("academicYearCoursesTreachers");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.Schedules", b =>
+                {
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
+                        .WithMany("Schedules")
+                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("academicYearCoursesTreachers");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.StudentCourse", b =>
+                {
+                    b.HasOne("MobileApp.DAL.Entities.AppUser", "Student")
                         .WithMany("StudentCourses")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Course");
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
+                        .WithMany("StudentCourses")
+                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Student");
+
+                    b.Navigation("academicYearCoursesTreachers");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.UnAcademicCourse", b =>
+                {
+                    b.HasOne("MobileApp.DAL.Entities.Teacher", "Teacher")
+                        .WithMany("unAcademicCourses")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYear", b =>
@@ -579,27 +710,38 @@ namespace MobileApp.Migrations
                     b.Navigation("AcademicYearCourses");
                 });
 
+            modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCourses", b =>
+                {
+                    b.Navigation("AcademicYearCoursesTeachers");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", b =>
+                {
+                    b.Navigation("CourseMaterialLinks");
+
+                    b.Navigation("Schedules");
+
+                    b.Navigation("StudentCourses");
+                });
+
             modelBuilder.Entity("MobileApp.DAL.Entities.AppUser", b =>
                 {
                     b.Navigation("AcademicYear")
                         .IsRequired();
+
+                    b.Navigation("StudentCourses");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Course", b =>
                 {
-                    b.Navigation("StudentCourses");
-
                     b.Navigation("academicYearCourses");
-                });
-
-            modelBuilder.Entity("MobileApp.DAL.Entities.Student", b =>
-                {
-                    b.Navigation("StudentCourses");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Teacher", b =>
                 {
-                    b.Navigation("AcademicYearCourses");
+                    b.Navigation("academicYearCoursesTeachers");
+
+                    b.Navigation("unAcademicCourses");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MobileApp.DAL.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace MobileApp.BL.DTO
 {
     public class TeacherDTO
     {
-        [Required(ErrorMessage ="ID is Required")]
+        [Required(ErrorMessage ="الرقم التعريفى مطلوب")]
         public  int Id {  get; set; }
 
         [Required(ErrorMessage = "اسم المستخدم مطلوب ")]
@@ -22,5 +23,26 @@ namespace MobileApp.BL.DTO
         [Required(ErrorMessage = "البريد الالكترونى مطلوب")]
         [DataType(DataType.EmailAddress, ErrorMessage = "بريد الكترونى غير صالح")]
         public string? Email { get; set; }
+      
+        [Required(ErrorMessage = "لينك الزووم مطلوب")]
+        public string ZoomLink { get; set; }
+  
+
+
+        public string ImgName { get; set; }
+
+
+        [Required(ErrorMessage = "صورة المعلم مطلوبة")]
+        public IFormFile Img { get; set; }
+
+        public string YoutubeLink { get; set; }
+        public DateTime startDate { get; set; }
+
+        public DateTime endDate { get; set; }
+
+        public int NumberOfLessons { get; set; }
+
+        public IEnumerable<Schedules> Schedules {  get; set; }
+
     }
 }

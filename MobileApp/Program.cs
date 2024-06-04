@@ -48,13 +48,20 @@ namespace MobileApp
 
             builder.Services.AddTransient<IPasswordValidator<AppUser>, CustomPasswordValidator<AppUser>>();
 
-            builder.Services.AddScoped<IStudent, StudentRepo>();
-            builder.Services.AddScoped<ISupervisor, SupervisorRepo>();
+          
+         
             builder.Services.AddScoped<ITeacher, TeacherRepo>();
             builder.Services.AddScoped<IStudentCourse, StudentCoursesRepo>();
             builder.Services.AddScoped<IAcademicYearCourses, AcademicYearCoursesRepo>();
             builder.Services.AddScoped<IAcademicYear, AcademicYearRepo>();
             builder.Services.AddScoped<ICourse, CourseRepo>();
+            builder.Services.AddScoped<IGroup, GroupRepo>();
+            builder.Services.AddScoped<IStudentCourse, StudentCoursesRepo>();
+            builder.Services.AddScoped<IAcademicYearCourses, AcademicYearCoursesRepo>();
+            builder.Services.AddScoped<IAcademicYearCourses, AcademicYearCoursesRepo>();
+            builder.Services.AddScoped<IAcademicYeatCoursesTeachers, AcademicYearCoursesTeachersRepo>();
+            builder.Services.AddScoped<ICourseMaterialLinks, CourseMaterialLinksRepo>();
+
             builder.Services.AddMvc()
         .ConfigureApiBehaviorOptions(options => {
             options.SuppressModelStateInvalidFilter = true;

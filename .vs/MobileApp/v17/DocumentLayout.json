@@ -3,96 +3,384 @@
   "WorkspaceRootPath": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\controllers\\coursemateriallinkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\coursemateriallinkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\signindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\signindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\repos\\coursemateriallinksrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\coursemateriallinksrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\passwordvalidators\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\passwordvalidators\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\createcoursemateriallinksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createcoursemateriallinksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\adminsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\adminsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\signupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\signupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\automapper\\myprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\automapper\\myprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\coursemateriallinksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\coursemateriallinksdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\dal\\entities\\coursematerialfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\coursematerialfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240524212741_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240524212741_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\dal\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\academicyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\academicyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\supervisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\supervisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\dal\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\supervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\supervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\unacademiccourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\unacademiccourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\coursemateriallinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\coursemateriallinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\interfaces\\icoursemateriallinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\icoursemateriallinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240604105147_build4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240604105147_build4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\academicyearcoursesteachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\academicyearcoursesteachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\repos\\studentcoursesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\studentcoursesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\mycoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\mycoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\studentcoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\studentcoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\iacademicyearcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\iacademicyearcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\schedulesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\schedulesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\schedules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\schedules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\istudentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\istudentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603120557_build-db2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:MobileApp\\Migrations\\20240603120557_build-db2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\migrations\\20240603101454_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\migrations\\20240603101454_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\repos\\academicyearcoursesteachersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\academicyearcoursesteachersrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\controllers\\academicyearcoursesteachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\academicyearcoursesteachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\academicyearcoursesteachersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\academicyearcoursesteachersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\interfaces\\iacademicyeatcoursesteachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\iacademicyeatcoursesteachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\bl\\dto\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\repos\\academicyearcoursesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\academicyearcoursesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\updateacademicyearcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\updateacademicyearcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\academicyearcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\academicyearcoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\academicyearcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\academicyearcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|c:\\users\\el-masreya\\documents\\github\\mobileappapi\\mobileapp\\migrations\\20240603121035_build-db3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\migrations\\20240603121035_build-db3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603101259_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240603101259_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\updatestudentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\updatestudentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\studentcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\studentcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\repos\\academicyearrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\academicyearrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603072608_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240603072608_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\unacademiccoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\unacademiccoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\mobileapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\mobileapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\mobileapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\mobileapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\mobileapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\mobileapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\iacademicyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\iacademicyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\academicyeardetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\academicyeardetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\coursewithteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\coursewithteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602101534_build-db6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240602101534_build-db6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602101228_build-db5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240602101228_build-db5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602100949_build-db3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240602100949_build-db3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\academicyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\academicyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602085420_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240602085420_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\academicyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\academicyearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\creategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\creategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\repos\\grouprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\grouprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\igroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\igroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\iteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\iteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\unacademiccoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\unacademiccoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\createunacademiccoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createunacademiccoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\dal\\entities\\unacademiccourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\dal\\entities\\unacademiccourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531225229_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240531225229_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531224447_build-db4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240531224447_build-db4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531224325_build-db4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240531224325_build-db4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\usersignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\usersignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\signupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\signupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531223906_build-db3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240531223906_build-db3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531220802_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240531220802_build-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531221012_build-db2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240531221012_build-db2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\updateadmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\updateadmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\signindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\signindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\createcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\createteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\services\\fileuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\services\\fileuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240527202649_build100.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240527202649_build100.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240527202609_build10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MobileApp\\Migrations\\20240527202609_build10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\academicyeardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\academicyeardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\repos\\courserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\courserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\repos\\unacademiccourserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\repos\\unacademiccourserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\iunacademiccourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\iunacademiccourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\interfaces\\icourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\interfaces\\icourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\createacademicyeardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createacademicyeardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\passwordvalidators\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\passwordvalidators\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,12 +395,12 @@
       "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createsupervisordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\mobileapp\\bl\\dto\\academicyearcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3954C148-9461-4589-AA47-BCA281EE5D23}|MobileApp\\MobileApp.csproj|solutionrelative:mobileapp\\bl\\dto\\academicyearcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,11 +410,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -134,281 +426,1040 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomPasswordValidator.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
-              "RelativeDocumentMoniker": "MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
-              "RelativeToolTip": "MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAAAkAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T23:11:09.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignInDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignInDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\SignInDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignInDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\SignInDTO.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAIA2wBEAAAA8AAAA",
+              "DocumentIndex": 2,
+              "Title": "CreateCourseMaterialLinksDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateCourseMaterialLinksDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateCourseMaterialLinksDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateCourseMaterialLinksDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateCourseMaterialLinksDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:51:01.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20240524212741_build-db.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240524212741_build-db.cs",
-              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240524212741_build-db.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240524212741_build-db.cs",
-              "RelativeToolTip": "MobileApp\\Migrations\\20240524212741_build-db.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:27:41.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminSignUpDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AdminSignUpDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\AdminSignUpDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AdminSignUpDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\AdminSignUpDTO.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:19:00.987Z",
+              "WhenOpened": "2024-06-04T11:07:07.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "MobileApp\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "MobileApp\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAANcBAAAAAAAAAAAAAOwBAAAQAAAA",
+              "Title": "CourseMaterialLinkController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\CourseMaterialLinkController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\CourseMaterialLinkController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\CourseMaterialLinkController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\CourseMaterialLinkController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAEYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:00:17.322Z",
+              "WhenOpened": "2024-06-04T11:02:41.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\UserDTO.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAgAAAADAAAA",
+              "DocumentIndex": 1,
+              "Title": "CourseMaterialLinksRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\CourseMaterialLinksRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\CourseMaterialLinksRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\CourseMaterialLinksRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\CourseMaterialLinksRepo.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:59:39.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\AppUser.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AppUser.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T20:59:04.846Z",
+              "WhenOpened": "2024-06-04T10:56:52.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SignUpDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignUpDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\SignUpDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignUpDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\SignUpDTO.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Title": "MyProfile.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\AutoMapper\\MyProfile.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\AutoMapper\\MyProfile.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\AutoMapper\\MyProfile.cs",
+              "RelativeToolTip": "MobileApp\\BL\\AutoMapper\\MyProfile.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBsAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:52:39.152Z",
+              "WhenOpened": "2024-05-27T20:19:41.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AcademicYear.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYear.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\AcademicYear.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYear.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\AcademicYear.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABUAAAAcAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Program.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Program.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Program.cs",
+              "RelativeToolTip": "MobileApp\\Program.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAAD4AAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:15:35.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SupervisorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SupervisorDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\SupervisorDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SupervisorDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\SupervisorDTO.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAYAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:56:21.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Teacher.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Teacher.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Teacher.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Teacher.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:03:15.109Z",
+              "WhenOpened": "2024-05-27T20:21:18.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UpdateUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAqAAAA",
+              "Title": "CourseMaterialLinksDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseMaterialLinksDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CourseMaterialLinksDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseMaterialLinksDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CourseMaterialLinksDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:42:52.397Z",
+              "WhenOpened": "2024-06-04T11:04:23.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "MobileApp\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "MobileApp\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAEgAAAAAAAAA",
+              "Title": "ICourseMaterialLinks.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\ICourseMaterialLinks.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\ICourseMaterialLinks.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\ICourseMaterialLinks.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\ICourseMaterialLinks.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:13:30.383Z",
+              "WhenOpened": "2024-06-04T10:53:08.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Supervisor.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Supervisor.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Supervisor.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Supervisor.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Supervisor.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA0AAAAGAAAA",
+              "DocumentIndex": 7,
+              "Title": "CourseMaterialLinks.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\CourseMaterialLinks.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\CourseMaterialLinks.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\CourseMaterialLinks.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\CourseMaterialLinks.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:57:37.196Z",
+              "WhenOpened": "2024-05-31T21:58:33.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\DataContext\\DataContext.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\DataContext\\DataContext.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\DataContext\\DataContext.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\DataContext\\DataContext.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAAADYAAABGAAAA",
+              "DocumentIndex": 6,
+              "Title": "CourseMaterialFiles.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\CourseMaterialFiles.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\CourseMaterialFiles.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\CourseMaterialFiles.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\CourseMaterialFiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:30:36.799Z"
+              "WhenOpened": "2024-06-04T10:50:05.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UnAcademicCourse.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "DocumentIndex": 10,
+              "Title": "20240604105147_build4.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240604105147_build4.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240604105147_build4.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240604105147_build4.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240604105147_build4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:30:15.028Z"
+              "WhenOpened": "2024-06-04T10:51:48.142Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "MobileApp\\Controllers\\TeacherController.cs",
               "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\TeacherController.cs",
               "RelativeToolTip": "MobileApp\\Controllers\\TeacherController.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAAK4AAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:22:25.567Z"
+              "WhenOpened": "2024-05-23T08:22:25.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "MobileApp\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "MobileApp\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "AcademicYearCoursesTeachers.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYearCoursesTeachers.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\AcademicYearCoursesTeachers.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYearCoursesTeachers.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\AcademicYearCoursesTeachers.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:22:19.609Z"
+              "WhenOpened": "2024-06-02T07:43:47.551Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Student.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Student.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Student.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 13,
+              "Title": "StudentCoursesRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\StudentCoursesRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\StudentCoursesRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\StudentCoursesRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\StudentCoursesRepo.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEYAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:15:41.851Z"
+              "WhenOpened": "2024-06-04T10:16:17.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MyCoursesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\MyCoursesDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\MyCoursesDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\MyCoursesDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\MyCoursesDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:35:46.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Course.cs",
-              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Course.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Course.cs",
-              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Course.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "Title": "StudentCourseController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\StudentCourseController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\StudentCourseController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\StudentCourseController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\StudentCourseController.cs",
+              "ViewState": "AQIAANUAAAAAAAAAAAAAAOIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:15:37.708Z"
+              "WhenOpened": "2024-06-02T11:25:32.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IAcademicYearCourses.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IAcademicYearCourses.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\IAcademicYearCourses.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IAcademicYearCourses.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\IAcademicYearCourses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T09:15:32.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAAAHwCAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:40:13.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UpdateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UpdateUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T21:56:35.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SchedulesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SchedulesDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\SchedulesDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SchedulesDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\SchedulesDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T10:35:32.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Schedules.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Schedules.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Schedules.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Schedules.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Schedules.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:02:12.199Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "IStudentCourse.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IStudentCourse.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\IStudentCourse.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IStudentCourse.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\IStudentCourse.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwBEAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:07:30.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20240603120557_build-db2.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603120557_build-db2.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240603120557_build-db2.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603120557_build-db2.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240603120557_build-db2.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:05:58.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20240603101454_build-db.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603101454_build-db.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240603101454_build-db.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603101454_build-db.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240603101454_build-db.cs",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:14:54.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AcademicYearCoursesTeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AcademicYearCoursesTeacherController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\AcademicYearCoursesTeacherController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AcademicYearCoursesTeacherController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\AcademicYearCoursesTeacherController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAAIcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T06:27:19.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AcademicYearCoursesTeachersRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\AcademicYearCoursesTeachersRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\AcademicYearCoursesTeachersRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\AcademicYearCoursesTeachersRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\AcademicYearCoursesTeachersRepo.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAIA5wD8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:36:55.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AcademicYearCoursesTeachersDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearCoursesTeachersDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\AcademicYearCoursesTeachersDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearCoursesTeachersDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\AcademicYearCoursesTeachersDTO.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAAcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:51:07.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IAcademicYeatCoursesTeachers.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IAcademicYeatCoursesTeachers.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\IAcademicYeatCoursesTeachers.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IAcademicYeatCoursesTeachers.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\IAcademicYeatCoursesTeachers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:33:25.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UpdateDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T06:17:52.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AcademicYearCoursesRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\AcademicYearCoursesRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\AcademicYearCoursesRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\AcademicYearCoursesRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\AcademicYearCoursesRepo.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAAC0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T09:15:41.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UpdateAcademicYearCoursesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateAcademicYearCoursesDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UpdateAcademicYearCoursesDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateAcademicYearCoursesDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UpdateAcademicYearCoursesDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T06:06:27.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AcademicYearCourses.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYearCourses.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\AcademicYearCourses.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYearCourses.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\AcademicYearCourses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T01:02:37.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AcademicYearCoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AcademicYearCoursesController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\AcademicYearCoursesController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AcademicYearCoursesController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\AcademicYearCoursesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T06:01:03.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240603121035_build-db3.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603121035_build-db3.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240603121035_build-db3.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603121035_build-db3.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240603121035_build-db3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:10:35.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "TeacherDTO.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\TeacherDTO.cs",
               "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\TeacherDTO.cs",
               "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\TeacherDTO.cs",
               "RelativeToolTip": "MobileApp\\BL\\DTO\\TeacherDTO.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABMAAAA1AAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wCwAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:57:48.197Z"
+              "WhenOpened": "2024-06-02T09:33:05.102Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\DataContext\\DataContext.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\DataContext\\DataContext.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\DataContext\\DataContext.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\DataContext\\DataContext.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:37:24.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StudentCourse.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\StudentCourse.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\StudentCourse.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\StudentCourse.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\StudentCourse.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAewBkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:23:28.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AppUser.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T20:59:04.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Course.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Course.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Course.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T01:02:40.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20240603101259_build-db.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603101259_build-db.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240603101259_build-db.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603101259_build-db.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240603101259_build-db.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:12:59.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UpdateStudentCourse.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateStudentCourse.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UpdateStudentCourse.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateStudentCourse.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UpdateStudentCourse.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T12:06:57.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "StudentCourseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\StudentCourseDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\StudentCourseDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\StudentCourseDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\StudentCourseDTO.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:27:29.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AcademicYearRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\AcademicYearRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\AcademicYearRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\AcademicYearRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\AcademicYearRepo.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:25:40.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20240603072608_build-db.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603072608_build-db.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240603072608_build-db.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240603072608_build-db.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240603072608_build-db.cs",
+              "ViewState": "AQIAAEgBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T07:26:09.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "AcademicYearCoursesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearCoursesDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\AcademicYearCoursesDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearCoursesDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\AcademicYearCoursesDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T06:03:05.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UnAcademicCourseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UnAcademicCourseDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UnAcademicCourseDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UnAcademicCourseDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UnAcademicCourseDTO.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:48:47.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\appsettings.json",
+              "RelativeDocumentMoniker": "MobileApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\appsettings.json",
+              "RelativeToolTip": "MobileApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T11:58:13.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MobileApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MobileApp\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T11:58:34.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "MobileApp.http",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.http",
+              "RelativeDocumentMoniker": "MobileApp\\MobileApp.http",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.http*",
+              "RelativeToolTip": "MobileApp\\MobileApp.http*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-06-02T11:58:16.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "MobileApp",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
+              "RelativeDocumentMoniker": "MobileApp\\MobileApp.csproj",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
+              "RelativeToolTip": "MobileApp\\MobileApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-02T11:58:27.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "MobileApp",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
+              "RelativeDocumentMoniker": "MobileApp\\MobileApp.csproj",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\MobileApp.csproj",
+              "RelativeToolTip": "MobileApp\\MobileApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-02T11:54:46.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CourseDTo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseDTo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CourseDTo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseDTo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CourseDTo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T07:40:15.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\GroupController.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAUwK4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:25:31.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IAcademicYear.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IAcademicYear.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\IAcademicYear.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IAcademicYear.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\IAcademicYear.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:17:09.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CourseWithTeacherDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseWithTeacherDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CourseWithTeacherDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseWithTeacherDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CourseWithTeacherDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:47:34.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AcademicYearDetails.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearDetails.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\AcademicYearDetails.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearDetails.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\AcademicYearDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:48:35.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20240602101534_build-db6.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602101534_build-db6.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240602101534_build-db6.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602101534_build-db6.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240602101534_build-db6.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:15:34.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20240602101228_build-db5.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602101228_build-db5.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240602101228_build-db5.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602101228_build-db5.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240602101228_build-db5.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:12:29.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20240602100949_build-db3.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602100949_build-db3.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240602100949_build-db3.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602100949_build-db3.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240602100949_build-db3.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:09:49.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "AcademicYear.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYear.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\AcademicYear.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\AcademicYear.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\AcademicYear.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T01:02:25.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20240602085420_build-db.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602085420_build-db.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240602085420_build-db.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240602085420_build-db.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240602085420_build-db.cs",
+              "ViewState": "AQIAABICAAAAAAAAAAAAABUCAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:54:20.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Teacher.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Teacher.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Teacher.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Teacher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T21:03:15.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Group.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Group.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\Group.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\Group.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\Group.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:21:35.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "AcademicYearController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AcademicYearController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\AcademicYearController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\AcademicYearController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\AcademicYearController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:20:39.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "GroupDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\GroupDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\GroupDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\GroupDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\GroupDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:23:07.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "CreateGroupDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateGroupDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateGroupDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateGroupDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateGroupDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:21:31.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "GroupRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\GroupRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\GroupRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\GroupRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\GroupRepo.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:08:32.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "IGroup.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IGroup.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\IGroup.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IGroup.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\IGroup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:07:52.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ITeacher.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\ITeacher.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\ITeacher.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\ITeacher.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\ITeacher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:07:58.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UnAcademicCourseController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\UnAcademicCourseController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\UnAcademicCourseController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\UnAcademicCourseController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\UnAcademicCourseController.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAJ0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:38:02.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "MobileApp\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:13:30.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "CreateUnAcademicCourseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateUnAcademicCourseDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateUnAcademicCourseDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateUnAcademicCourseDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateUnAcademicCourseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:50:43.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "UnAcademicCourse.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
+              "RelativeDocumentMoniker": "MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
+              "RelativeToolTip": "MobileApp\\DAL\\Entities\\UnAcademicCourse.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:30:15.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20240531225229_build-db.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531225229_build-db.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240531225229_build-db.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531225229_build-db.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240531225229_build-db.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:52:29.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UserDTO.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T07:59:39.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20240531224447_build-db4.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531224447_build-db4.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240531224447_build-db4.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531224447_build-db4.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240531224447_build-db4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:44:48.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20240531224325_build-db4.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531224325_build-db4.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240531224325_build-db4.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531224325_build-db4.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240531224325_build-db4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:43:26.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "UserSignUpDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UserSignUpDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UserSignUpDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UserSignUpDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UserSignUpDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T21:48:12.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "SignUpDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignUpDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\SignUpDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignUpDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\SignUpDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T07:52:39.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20240531223906_build-db3.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531223906_build-db3.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240531223906_build-db3.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531223906_build-db3.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240531223906_build-db3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:39:07.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "20240531220802_build-db.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531220802_build-db.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240531220802_build-db.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531220802_build-db.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240531220802_build-db.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:08:03.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "20240531221012_build-db2.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531221012_build-db2.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240531221012_build-db2.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240531221012_build-db2.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240531221012_build-db2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:10:12.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "UpdateAdminDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateAdminDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\UpdateAdminDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\UpdateAdminDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\UpdateAdminDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T21:42:52.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "SignInDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignInDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\SignInDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\SignInDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\SignInDTO.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAWwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T07:51:01.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
               "Title": "StudentDTO.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\StudentDTO.cs",
               "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\StudentDTO.cs",
@@ -420,7 +1471,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 83,
+              "Title": "CreateCourseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateCourseDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateCourseDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateCourseDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateCourseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T21:35:17.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "CreateTeacherDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T07:45:49.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "fileUploader.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Services\\fileUploader.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Services\\fileUploader.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Services\\fileUploader.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Services\\fileUploader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T21:33:05.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "20240527202649_build100.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240527202649_build100.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240527202649_build100.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240527202649_build100.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240527202649_build100.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:26:49.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "20240527202609_build10.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240527202609_build10.cs",
+              "RelativeDocumentMoniker": "MobileApp\\Migrations\\20240527202609_build10.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\Migrations\\20240527202609_build10.cs",
+              "RelativeToolTip": "MobileApp\\Migrations\\20240527202609_build10.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:26:10.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "AcademicYearDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\AcademicYearDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\AcademicYearDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\AcademicYearDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:18:20.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "CourseRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\CourseRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\CourseRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\CourseRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\CourseRepo.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:47:57.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "UnAcademicCourseRepo.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\UnAcademicCourseRepo.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Repos\\UnAcademicCourseRepo.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Repos\\UnAcademicCourseRepo.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Repos\\UnAcademicCourseRepo.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAC4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:42:22.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "IUnAcademicCourse.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IUnAcademicCourse.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\IUnAcademicCourse.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\IUnAcademicCourse.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\IUnAcademicCourse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:40:35.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "ICourse.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\ICourse.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\Interfaces\\ICourse.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\Interfaces\\ICourse.cs",
+              "RelativeToolTip": "MobileApp\\BL\\Interfaces\\ICourse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:40:39.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "CreateAcademicYearDTO.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateAcademicYearDTO.cs",
+              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateAcademicYearDTO.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateAcademicYearDTO.cs",
+              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateAcademicYearDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:22:20.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "CustomPasswordValidator.cs",
+              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
+              "RelativeDocumentMoniker": "MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
+              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
+              "RelativeToolTip": "MobileApp\\PasswordValidators\\CustomPasswordValidator.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:11:09.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
               "Title": "ResetPasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\ResetPasswordDTO.cs",
               "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\ResetPasswordDTO.cs",
@@ -432,7 +1627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 96,
               "Title": "ForgetPasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\ForgetPasswordDTO.cs",
               "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\ForgetPasswordDTO.cs",
@@ -444,19 +1639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CreateTeacherDTO.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\CreateTeacherDTO.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:45:49.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 97,
               "Title": "CreateSupervisorDTO.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateSupervisorDTO.cs",
               "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateSupervisorDTO.cs",
@@ -468,19 +1651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CourseDTo.cs",
-              "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseDTo.cs",
-              "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CourseDTo.cs",
-              "ToolTip": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CourseDTo.cs",
-              "RelativeToolTip": "MobileApp\\BL\\DTO\\CourseDTo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:40:15.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 98,
               "Title": "CreateStudentDTO.cs",
               "DocumentMoniker": "C:\\Users\\EL-masreya\\Documents\\GitHub\\MobileAppAPI\\MobileApp\\BL\\DTO\\CreateStudentDTO.cs",
               "RelativeDocumentMoniker": "MobileApp\\BL\\DTO\\CreateStudentDTO.cs",

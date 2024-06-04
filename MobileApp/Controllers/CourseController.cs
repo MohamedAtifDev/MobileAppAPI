@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MobileApp.BL.CustomReponse;
 using MobileApp.BL.DTO;
 using MobileApp.BL.Interfaces;
+using MobileApp.BL.services;
 using MobileApp.DAL.DataContext;
 using MobileApp.DAL.Entities;
 
@@ -65,6 +66,8 @@ namespace MobileApp.Controllers
                 if (ModelState.IsValid)
                 {
                     var data = mapper.Map<Course>(CreateCourseDTO);
+                    var imgname = fileUploader.upload("Images", CreateCourseDTO.Img);
+                    data.ImgName = imgname;
                     icourse.Add(data);
                     var message = new List<string>();
                     message.Add("تم ااضافة المادة بنجاح");
@@ -107,6 +110,8 @@ namespace MobileApp.Controllers
                     if (entity is not null)
                     {
                         var data = mapper.Map<Course>(CourseDTo);
+                        var imgname = fileUploader.upload("Images", CourseDTo.Img);
+                        data.ImgName = imgname;
                         icourse.Update(data);
                         var message = new List<string>();
                         message.Add("تم تعديل المادة بنجاح");
@@ -155,6 +160,7 @@ namespace MobileApp.Controllers
             {
                 icourse.Delete(id);
                 var result = mapper.Map<CourseDTo>(data);
+                fileUploader.delete(data.ImgName, "Images");
                 var message = new List<string>();
                 message.Add("تم حذف المادة بنجاح");
                 return new CustomReponse<CourseDTo> { StatusCode = 200, Data = result, Message = message };
@@ -176,5 +182,8 @@ namespace MobileApp.Controllers
             return new CustomReponse<int> { StatusCode = 200, Data = data, Message = message };
 
         }
+
+    
+
     }
 }
