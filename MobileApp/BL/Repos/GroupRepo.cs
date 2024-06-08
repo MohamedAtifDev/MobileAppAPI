@@ -42,6 +42,7 @@ this.db = db;
 
         public void Update(Group Group)
         {
+            db.ChangeTracker.Clear();
             db.Entry(Group).State=Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.SaveChanges();
         }

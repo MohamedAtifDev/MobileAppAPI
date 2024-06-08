@@ -10,9 +10,9 @@ namespace MobileApp.BL.Interfaces
       
         void Delete(StudentCourse studentCourse);
         IEnumerable<StudentCourse> GetAll();
-      
 
-        StudentCourse GetById(StudentCourse studentCourse);
+
+         bool IsExsits(StudentCourse studentCourse);
         IEnumerable<MyCoursesDTO> GetStudentCourses(string StudentId);
 
         IEnumerable<MyCoursesDTO> GetStudentCoursesSchedules(string StudentId);

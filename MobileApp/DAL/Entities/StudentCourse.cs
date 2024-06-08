@@ -20,10 +20,19 @@ namespace MobileApp.DAL.Entities
         public int TeacherId { get; set; }
 
 
+        public int GroupID { get; set; }
+
         [ForeignKey("AcademicYearId,CourseId,TeacherId")]
 
 
-        public AcademicYearCoursesTeachers academicYearCoursesTreachers { get; set; }
+        public AcademicYearCoursesTeachers AcademicYearCoursesTeachers { get; set; }
+
+
+        [ForeignKey("GroupID")]
+        public Group Group {  get; set; }
+
+
+
         public DateTime AssignDate {  get; set; }   
     }
 }

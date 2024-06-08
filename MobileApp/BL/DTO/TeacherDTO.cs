@@ -29,7 +29,7 @@ namespace MobileApp.BL.DTO
   
 
 
-        public string ImgName { get; set; }
+        public string? ImgName { get; set; }
 
 
         [Required(ErrorMessage = "صورة المعلم مطلوبة")]
@@ -42,7 +42,7 @@ namespace MobileApp.BL.DTO
 
         public int NumberOfLessons { get; set; }
 
-        public IEnumerable<Schedules> Schedules {  get; set; }
+        public IEnumerable<FroupWithScheduleDTO> Groups {  get; set; }
 
     }
 }

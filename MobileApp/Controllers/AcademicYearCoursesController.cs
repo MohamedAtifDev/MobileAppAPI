@@ -5,6 +5,7 @@ using MobileApp.BL.CustomReponse;
 using MobileApp.BL.DTO;
 using MobileApp.BL.Interfaces;
 using MobileApp.DAL.Entities;
+using System.Collections.Generic;
 
 namespace MobileApp.Controllers
 {
@@ -133,7 +134,11 @@ namespace MobileApp.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var entity = academicYearCourses.GetById(Update.New_AcademicYearId, Update.New_CourseId);
+                    if (Update.New_CourseId == null)
+                    {
+                        Update.New_CourseId = Update.Old_CourseId;
+                    }
+                    var entity = academicYearCourses.GetById(Update.AcademicYearId,(int)Update.New_CourseId);
                     if (entity is null)
                     {
 
@@ -145,7 +150,7 @@ namespace MobileApp.Controllers
                     else
                     {
                         var AlreadyExist = new List<string>();
-                        AlreadyExist.Add("بيانات غير مسجلة");
+                        AlreadyExist.Add(" بالفعل بيانات  مسجلة");
                         return new CustomReponse<UpdateAcademicYearCoursesDTO> { StatusCode = 404, Data = null, Message = AlreadyExist };
                     }
 
@@ -195,6 +200,19 @@ namespace MobileApp.Controllers
             var message = new List<string>();
             message.Add($"  سجلات {data} يوجد  ");
             return new CustomReponse<int> { StatusCode = 200, Data = data, Message = message };
+
+        }
+
+        [HttpGet]
+        [Route("GetCourses/{AcademicYearId}")]
+        public CustomReponse<IEnumerable<CourseDTo>> GetCourses(int AcademicYearId)
+        {
+            var data = academicYearCourses.GetCourses(AcademicYearId);
+
+            var message = new List<string>();
+            var res = mapper.Map< IEnumerable < CourseDTo >> (data);
+            message.Add($"  تم استرجاع البيانات بنجاح");
+            return new CustomReponse<IEnumerable<CourseDTo>> { StatusCode = 200, Data = res, Message = message };
 
         }
     }

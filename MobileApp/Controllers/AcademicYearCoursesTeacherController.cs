@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EntityFramework.Exceptions.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MobileApp.BL.CustomReponse;
@@ -114,10 +115,19 @@ namespace MobileApp.Controllers
                     if (Update.NewTeacherId is null)
                     {
                         Update.NewTeacherId = Update.TeacherId;
-                        academicYeatCoursesTeachers.Update(Update);
-                        var message = new List<string>();
-                        message.Add("تم تعديل البيانات بنجاح ");
-                        return new CustomReponse<UpdateDTO> { StatusCode = 200, Data = null, Message = message };
+                        try
+                        {
+                            academicYeatCoursesTeachers.Update(Update);
+                            var message = new List<string>();
+                            message.Add("تم تعديل البيانات بنجاح ");
+                            return new CustomReponse<UpdateDTO> { StatusCode = 200, Data = null, Message = message };
+                        }catch(UniqueConstraintException ex)
+                        {
+                            var message = new List<string>();
+                            message.Add("لينك اليوتيوب موجود بالفعل");
+                            return new CustomReponse<UpdateDTO> { StatusCode = 400, Data = null, Message = message };
+                        }
+                       
                     }
                     else
                     {

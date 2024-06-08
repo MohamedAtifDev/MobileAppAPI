@@ -13,7 +13,11 @@ namespace MobileApp.BL.DTO
 
 
         public string ZoomLink { get; set; }
-        public IEnumerable<SchedulesDTO> Schedules { get; set; }
+
+        public string GroupName { get; set; }
+        public IEnumerable<ScheduleDTO> Schedules { get; set; }
+
+ 
 
        
     }

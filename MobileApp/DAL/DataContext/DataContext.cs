@@ -22,6 +22,8 @@ namespace MobileApp.DAL.DataContext
             builder.Entity<AcademicYearCourses>().HasKey(a => new {a.AcademicYearId, a.CourseId });
             builder.Entity<AcademicYearCoursesTeachers>().HasKey(a => new { a.AcademicYearId, a.CourseId ,a.TeacherId});
             builder.Entity<AcademicYear>().HasOne(a=>a.user).WithOne(a=>a.AcademicYear).OnDelete(DeleteBehavior.SetNull);
+
+            builder.Entity<CourseGroups>().HasKey(a => new { a.AcademicYearId, a.CourseId, a.TeacherId, a.GroupId });
             builder.Entity<UnAcademicCourse>().HasOne(a => a.Teacher).WithMany(a => a.unAcademicCourses).OnDelete(DeleteBehavior.SetNull);
             builder.Entity<StudentCourse>().HasKey(a => new { a.CourseId, a.StudentId,a.AcademicYearId,a.TeacherId });
             builder.Entity<IdentityRole>().HasData([
@@ -61,5 +63,9 @@ namespace MobileApp.DAL.DataContext
         public DbSet<UnAcademicCourse> unAcademicCourses { get; set; }
 
         public DbSet<Schedules> schedules {  get; set; }
+
+        public DbSet<CourseMaterialFiles> CourseMaterialFiles { get; set; }
+
+        public DbSet<CourseGroups>CourseGroups { get; set; }
     }
 }

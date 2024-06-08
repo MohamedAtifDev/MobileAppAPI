@@ -27,7 +27,7 @@ namespace MobileApp.BL.Repos
 
         public void Delete(StudentCourse studentCourse)
         {
-            var data = db.StudentCourses.Where(a => a.CourseId == studentCourse.CourseId && a.StudentId == studentCourse.StudentId && a.TeacherId == studentCourse.TeacherId && a.AcademicYearId == studentCourse.AcademicYearId).FirstOrDefault();
+            var data = db.StudentCourses.Where(a => a.CourseId == studentCourse.CourseId && a.StudentId == studentCourse.StudentId && a.TeacherId == studentCourse.TeacherId && a.AcademicYearId == studentCourse.AcademicYearId&&a.GroupID==studentCourse.GroupID).FirstOrDefault();
             db.StudentCourses.Remove(data);
             db.SaveChanges();
         }
@@ -37,9 +37,11 @@ namespace MobileApp.BL.Repos
             return db.StudentCourses.AsNoTracking().ToList();   
         }
 
-        public StudentCourse GetById(StudentCourse studentCourse)
+        public bool  IsExsits(StudentCourse studentCourse)
         {
-            return db.StudentCourses.Where(a => a.CourseId == studentCourse.CourseId && a.StudentId == studentCourse.StudentId&&a.TeacherId== studentCourse.TeacherId&&a.AcademicYearId== studentCourse.AcademicYearId).FirstOrDefault();
+            var data= db.StudentCourses.Where(a => a.CourseId == studentCourse.CourseId && a.StudentId == studentCourse.StudentId&&a.TeacherId== studentCourse.TeacherId&&a.AcademicYearId== studentCourse.AcademicYearId).FirstOrDefault();
+
+            return data == null ? false : true;
         }
 
         public void Update(StudentCourse StudentCourse)
@@ -50,15 +52,21 @@ namespace MobileApp.BL.Repos
 
         public IEnumerable<MyCoursesDTO> GetStudentCourses(string StudentId)
         {
-       
-            var data = db.StudentCourses.Where(a => a.StudentId == StudentId).Include(a => a.academicYearCoursesTreachers).ThenInclude(a => a.AcademicYearCourses).ThenInclude(a => a.Course).Include(a => a.academicYearCoursesTreachers).ThenInclude(a => a.Teacher).Include(a=>a.academicYearCoursesTreachers).ThenInclude(a=>a.AcademicYearCourses).ThenInclude(a=>a.AcademicYear);
+
+            var data = db.StudentCourses.Where(a => a.StudentId == StudentId).Include(a => a.AcademicYearCoursesTeachers).ThenInclude(a => a.AcademicYearCourses)
+                .ThenInclude(a => a.Course).Include(a => a.AcademicYearCoursesTeachers).ThenInclude(a => a.AcademicYearCourses).ThenInclude(a => a.AcademicYear)
+                .Include(a => a.AcademicYearCoursesTeachers).ThenInclude(a => a.Teacher).
+                Include(a => a.Group);
+
 
             var res = data.Select(a => new MyCoursesDTO
             {
-                AcademicYearName = a.academicYearCoursesTreachers.AcademicYearCourses.AcademicYear.Name,
-                CourseName = a.academicYearCoursesTreachers.AcademicYearCourses.Course.Name,
-                TeacherName = a.academicYearCoursesTreachers.Teacher.Name,
-                Numberoflessons = a.academicYearCoursesTreachers.NumberOfLessons,
+                AcademicYearName = a.AcademicYearCoursesTeachers.AcademicYearCourses.AcademicYear.Name,
+                CourseName = a.AcademicYearCoursesTeachers.AcademicYearCourses.Course.Name,
+                TeacherName = a.AcademicYearCoursesTeachers.Teacher.Name,
+                Numberoflessons = a.AcademicYearCoursesTeachers.NumberOfLessons,
+                ZoomLink = a.AcademicYearCoursesTeachers.Teacher.ZoomLink,
+                GroupName = a.Group.Name,
                 Schedules = null
             }); ; ;
             return res;
@@ -66,21 +74,27 @@ namespace MobileApp.BL.Repos
 
         public IEnumerable<MyCoursesDTO> GetStudentCoursesSchedules(string StudentId)
         {
-            var data = db.StudentCourses.Where(a => a.StudentId == StudentId).Include(a => a.academicYearCoursesTreachers).ThenInclude(a => a.AcademicYearCourses).ThenInclude(a => a.Course).Include(a => a.academicYearCoursesTreachers).ThenInclude(a => a.Teacher).Include(a => a.academicYearCoursesTreachers).ThenInclude(a => a.AcademicYearCourses).ThenInclude(a => a.AcademicYear).Include(a=>a.academicYearCoursesTreachers).ThenInclude(a=>a.Schedules);
+            var data = db.StudentCourses.Where(a => a.StudentId == StudentId).Include(a => a.AcademicYearCoursesTeachers).ThenInclude(a => a.AcademicYearCourses)
+                .ThenInclude(a => a.Course).Include(a => a.AcademicYearCoursesTeachers).ThenInclude(a => a.AcademicYearCourses).ThenInclude(a => a.AcademicYear)
+                .Include(a => a.AcademicYearCoursesTeachers).ThenInclude(a => a.Teacher).
+                Include(a => a.Group).Include(a=>a.AcademicYearCoursesTeachers).ThenInclude(a=>a.groups).ThenInclude(a=>a.Schedules);
+
 
             var res = data.Select(a => new MyCoursesDTO
             {
-                AcademicYearName = a.academicYearCoursesTreachers.AcademicYearCourses.AcademicYear.Name,
-                CourseName = a.academicYearCoursesTreachers.AcademicYearCourses.Course.Name,
-                TeacherName = a.academicYearCoursesTreachers.Teacher.Name,
-                Numberoflessons = a.academicYearCoursesTreachers.NumberOfLessons,
-               ZoomLink=a.academicYearCoursesTreachers.Teacher.ZoomLink,
-                Schedules = a.academicYearCoursesTreachers.Schedules.Select(a =>new SchedulesDTO
-                {
-                    Day=a.Day,
-                    Time=a.Time
-                })
+                AcademicYearName = a.AcademicYearCoursesTeachers.AcademicYearCourses.AcademicYear.Name,
+                CourseName = a.AcademicYearCoursesTeachers.AcademicYearCourses.Course.Name,
+                TeacherName = a.AcademicYearCoursesTeachers.Teacher.Name,
+                Numberoflessons = a.AcademicYearCoursesTeachers.NumberOfLessons,
+                ZoomLink = a.AcademicYearCoursesTeachers.Teacher.ZoomLink,
+                GroupName = a.Group.Name,
+                Schedules = a.AcademicYearCoursesTeachers.groups.Where(grp=>grp.Group.Id==a.Group.Id && grp.AcademicYearId==a.AcademicYearId && grp.CourseId==a.CourseId&& grp.TeacherId == a.TeacherId)
+                .Select(a=>a.Schedules.Select(sch=>new ScheduleDTO
+                {Day=sch.Day,
+                Time=sch.Time,
 
+                })
+                ).FirstOrDefault()
             }); ; ;
             return res;
 

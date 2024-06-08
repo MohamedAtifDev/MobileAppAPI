@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MobileApp.Migrations
 {
     /// <inheritdoc />
-    public partial class builddb : Migration
+    public partial class build : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -75,9 +75,7 @@ namespace MobileApp.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    NumberOfStudents = table.Column<int>(type: "int", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -265,13 +263,15 @@ namespace MobileApp.Migrations
                         column: x => x.AcademicYearId,
                         principalTable: "AcademicYears",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate:ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_AcademicYearCourses_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -294,13 +294,70 @@ namespace MobileApp.Migrations
                         columns: x => new { x.AcademicYearId, x.CourseId },
                         principalTable: "AcademicYearCourses",
                         principalColumns: new[] { "AcademicYearId", "CourseId" },
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_AcademicYearCoursesTeachers_Teachers_TeacherId",
                         column: x => x.TeacherId,
                         principalTable: "Teachers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CourseGroups",
+                columns: table => new
+                {
+                    AcademicYearId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: false),
+                    GroupId = table.Column<int>(type: "int", nullable: false),
+                    Price = table.Column<double>(type: "float", nullable: false),
+                    NumberOfStudents = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CourseGroups", x => new { x.AcademicYearId, x.CourseId, x.TeacherId, x.GroupId });
+                    table.ForeignKey(
+                        name: "FK_CourseGroups_AcademicYearCoursesTeachers_AcademicYearId_CourseId_TeacherId",
+                        columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId },
+                        principalTable: "AcademicYearCoursesTeachers",
+                        principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId" },
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_CourseGroups_groups_GroupId",
+                        column: x => x.GroupId,
+                        principalTable: "groups",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CourseMaterialFiles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AcademicYearId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CourseMaterialFiles", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CourseMaterialFiles_AcademicYearCoursesTeachers_AcademicYearId_CourseId_TeacherId",
+                        columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId },
+                        principalTable: "AcademicYearCoursesTeachers",
+                        principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId" },
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -310,6 +367,8 @@ namespace MobileApp.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     url = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AcademicYearId = table.Column<int>(type: "int", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     TeacherId = table.Column<int>(type: "int", nullable: false)
@@ -322,7 +381,7 @@ namespace MobileApp.Migrations
                         columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId },
                         principalTable: "AcademicYearCoursesTeachers",
                         principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId" },
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Cascade, onUpdate: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -333,6 +392,7 @@ namespace MobileApp.Migrations
                     AcademicYearId = table.Column<int>(type: "int", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     TeacherId = table.Column<int>(type: "int", nullable: false),
+                    GroupID = table.Column<int>(type: "int", nullable: false),
                     AssignDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -343,13 +403,45 @@ namespace MobileApp.Migrations
                         columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId },
                         principalTable: "AcademicYearCoursesTeachers",
                         principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId" },
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Cascade,
+                        onUpdate: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_StudentCourses_AspNetUsers_StudentId",
                         column: x => x.StudentId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction
+                       );
+                    table.ForeignKey(
+                        name: "FK_StudentCourses_groups_GroupID",
+                        column: x => x.GroupID,
+                        principalTable: "groups",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade, onUpdate: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "schedules",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Day = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Time = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AcademicYearId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    TeacherId = table.Column<int>(type: "int", nullable: false),
+                    GroupID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_schedules", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_schedules_CourseGroups_AcademicYearId_CourseId_TeacherId_GroupID",
+                        columns: x => new { x.AcademicYearId, x.CourseId, x.TeacherId, x.GroupID },
+                        principalTable: "CourseGroups",
+                        principalColumns: new[] { "AcademicYearId", "CourseId", "TeacherId", "GroupId" },
+                        onDelete: ReferentialAction.Cascade, onUpdate: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
@@ -431,6 +523,16 @@ namespace MobileApp.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_CourseGroups_GroupId",
+                table: "CourseGroups",
+                column: "GroupId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CourseMaterialFiles_AcademicYearId_CourseId_TeacherId",
+                table: "CourseMaterialFiles",
+                columns: new[] { "AcademicYearId", "CourseId", "TeacherId" });
+
+            migrationBuilder.CreateIndex(
                 name: "IX_CourseMaterialLinks_AcademicYearId_CourseId_TeacherId",
                 table: "CourseMaterialLinks",
                 columns: new[] { "AcademicYearId", "CourseId", "TeacherId" });
@@ -448,9 +550,19 @@ namespace MobileApp.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_schedules_AcademicYearId_CourseId_TeacherId_GroupID",
+                table: "schedules",
+                columns: new[] { "AcademicYearId", "CourseId", "TeacherId", "GroupID" });
+
+            migrationBuilder.CreateIndex(
                 name: "IX_StudentCourses_AcademicYearId_CourseId_TeacherId",
                 table: "StudentCourses",
                 columns: new[] { "AcademicYearId", "CourseId", "TeacherId" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_StudentCourses_GroupID",
+                table: "StudentCourses",
+                column: "GroupID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_StudentCourses_StudentId",
@@ -494,10 +606,13 @@ namespace MobileApp.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "CourseMaterialFiles");
+
+            migrationBuilder.DropTable(
                 name: "CourseMaterialLinks");
 
             migrationBuilder.DropTable(
-                name: "groups");
+                name: "schedules");
 
             migrationBuilder.DropTable(
                 name: "StudentCourses");
@@ -509,7 +624,13 @@ namespace MobileApp.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
+                name: "CourseGroups");
+
+            migrationBuilder.DropTable(
                 name: "AcademicYearCoursesTeachers");
+
+            migrationBuilder.DropTable(
+                name: "groups");
 
             migrationBuilder.DropTable(
                 name: "AcademicYearCourses");

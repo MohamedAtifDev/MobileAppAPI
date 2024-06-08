@@ -66,8 +66,9 @@ namespace MobileApp.Controllers
                 if (ModelState.IsValid)
                 {
                     var data = mapper.Map<Teacher>(TeacherDTO);
-                    var imgname = fileUploader.upload("Images", TeacherDTO.Img);
+                    var imgname = fileUploader.upload("Files", TeacherDTO.Img);
                     data.ImgName = imgname;
+                    TeacherDTO.ImgName = imgname;
                     iteacher.Add(data);
                     var message = new List<string>();
                     message.Add("تم اضافة المعلم بنجاح");
@@ -110,8 +111,9 @@ namespace MobileApp.Controllers
                     if(entity is not null)
                     {
                         var data = mapper.Map<Teacher>(TeacherDTO);
-                        var imgname = fileUploader.upload("Images", TeacherDTO.Img);
+                        var imgname = fileUploader.upload("Files", TeacherDTO.Img);
                         data.ImgName = imgname;
+                        TeacherDTO.ImgName = imgname;
                         iteacher.Update(data);
                         var message = new List<string>();
                         message.Add("تم تعديل المعلم بنجاح");
@@ -158,7 +160,7 @@ namespace MobileApp.Controllers
             var data = iteacher.GetById(id);
             if (data is not null)
             {
-                fileUploader.delete(data.ImgName, "Images");
+                fileUploader.delete(data.ImgName, "Files");
                 iteacher.Delete(id);
                 var result = mapper.Map<TeacherDTO>(data);
                 var message = new List<string>();

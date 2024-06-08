@@ -3,6 +3,7 @@ using MobileApp.BL.DTO;
 using MobileApp.BL.Interfaces;
 using MobileApp.DAL.DataContext;
 using MobileApp.DAL.Entities;
+using Org.BouncyCastle.Tls;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MobileApp.BL.Repos
@@ -49,11 +50,24 @@ namespace MobileApp.BL.Repos
                 Email = a.Teacher.Email,
                 NumberOfLessons = a.NumberOfLessons,
                 ZoomLink = a.Teacher.ZoomLink,
-                Schedules = a.Schedules.Select(a => a)
-            });
+
+                Groups = a.groups.Select(a => new FroupWithScheduleDTO
+                {GroupName=a.Group.Name,
+                Price=a.Price,
+                NumberOFStudents=a.NumberOfStudents,
+                schedules=a.Schedules.Select(a=>new ScheduleDTO
+                {
+                    Day=a.Day,
+                    Time=a.Time
+                })
+
+                })
+            }); ;
 
             return res;
         }
+
+
 
         public void Update(UpdateDTO update)
         {
@@ -67,23 +81,66 @@ namespace MobileApp.BL.Repos
                 YoutubeLink=update.YoutubeLink,
                 NumberOfLessons=update.NumberOfLessons
             };
+            //db.ChangeTracker.Clear();
 
+            //var data = GetById(update.AcademicYearId, update.CourseId, update.TeacherId);
+            //data.startDate = update.startDate;
+            //data.TeacherId = (int)update.NewTeacherId;
+            //data.YoutubeLink = update.YoutubeLink;
+            //data.endDate = update.endDate;
+            //data.NumberOfLessons = update.NumberOfLessons;
+
+            //db.SaveChanges();
 
             var records = new List<Schedules>();
             var records2 = new List<CourseMaterialLinks>();
-            var relateddata = db.schedules.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId==update.TeacherId).AsNoTracking().AsEnumerable();
+
+            var records3 = new List<CourseMaterialFiles>();
+
+            var records4 = new List<CourseGroups>();
+
+            var records5 = new List<StudentCourse>();
+            var relateddata = db.schedules.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).AsNoTracking().AsEnumerable();
+
+            var dataToDelete = db.AcademicYearCoursesTeachers.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).FirstOrDefault();
+            var CourseMaterialLinks = db.CourseMaterialLinks.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).AsNoTracking().ToList();
+
+            var courseMaterialFile = db.CourseMaterialFiles.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).AsNoTracking().ToList();
+
+
+
+            var courseGroups = db.CourseGroups.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).AsNoTracking().ToList();
+
+
+            var studentCourse = db.StudentCourses.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).AsNoTracking().ToList();
+
+
             foreach (var item in relateddata)
             {
                 records.Add(item);
             }
-            var dataToDelete = db.AcademicYearCoursesTeachers.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId &&a.TeacherId==update.TeacherId ).FirstOrDefault();
-            var CourseMaterialLinks = db.CourseMaterialLinks.Where(a => a.AcademicYearId == update.AcademicYearId && a.CourseId == update.CourseId && a.TeacherId == update.TeacherId).AsNoTracking().ToList();
             foreach (var item in CourseMaterialLinks)
             {
                 records2.Add(item);
             }
 
 
+            foreach (var item in courseMaterialFile)
+            {
+                records3.Add(item);
+            }
+
+
+            foreach (var item in studentCourse)
+            {
+                records5.Add(item);
+            }
+
+            foreach (var item in courseGroups)
+            {
+
+                records4.Add(item);
+            }
             db.AcademicYearCoursesTeachers.Remove(dataToDelete);
             db.AcademicYearCoursesTeachers.Add(record);
             db.SaveChanges();
@@ -97,7 +154,7 @@ namespace MobileApp.BL.Repos
                 item.Id = 0;
 
             }
-            db.schedules.AddRange(records);
+           
 
 
 
@@ -110,9 +167,54 @@ namespace MobileApp.BL.Repos
 
             }
 
-            db.CourseMaterialLinks.AddRange(CourseMaterialLinks);
+
+
+            db.CourseMaterialLinks.AddRange(records2);
+
+
+
+            foreach (var item in records3)
+            {
+                item.CourseId = record.CourseId;
+                item.AcademicYearId = record.AcademicYearId;
+                item.TeacherId = record.TeacherId;
+                item.Id = 0;
+
+            }
+
+            db.CourseMaterialFiles.AddRange(records3);
+
+
+            foreach (var item in records4)
+            {
+                item.CourseId = record.CourseId;
+                item.AcademicYearId = record.AcademicYearId;
+                item.TeacherId = record.TeacherId;
+
+
+            }
+
+      
+
+            foreach (var item in records5)
+            {
+                item.CourseId = record.CourseId;
+                item.AcademicYearId = record.AcademicYearId;
+                item.TeacherId = record.TeacherId;
+
+
+            }
+
+        
+            db.StudentCourses.AddRange(records5);
             db.SaveChanges();
 
+            db.CourseGroups.AddRange(records4);
+              db.SaveChanges();
+
+            db.schedules.AddRange(records);
+
+            db.SaveChanges();
         }
     }
 }

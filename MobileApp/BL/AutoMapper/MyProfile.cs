@@ -16,8 +16,10 @@ namespace MobileApp.BL.AutoMapper
             CreateMap<CreateAcademicYearDTO, AcademicYear>().ReverseMap();
             CreateMap<UnAcademicCourse, UnAcademicCourseDTO>().ReverseMap();
             CreateMap<CreateUnAcademicCourseDTO, UnAcademicCourse>().ReverseMap();
+            CreateMap<UpdateUnAcacdemicCourseDTO, UnAcademicCourse>().ReverseMap();
             CreateMap<CourseDTo, Course>().ReverseMap();
             CreateMap<CreateCourseDTO, Course>().ReverseMap();
+            CreateMap<UpdateCourseDTO, Course>().ReverseMap();
             CreateMap<CreateGroupDTO, Group>().ReverseMap();
             CreateMap<GroupDTO,Group>().ReverseMap();
             CreateMap<StudentCourseDTO, StudentCourse>().ReverseMap();
@@ -26,6 +28,11 @@ namespace MobileApp.BL.AutoMapper
             CreateMap<AcademicYearCoursesTeachers, AcademicYearCoursesTeachersDTO>().ReverseMap();
             CreateMap<CreateCourseMaterialLinksDTO, CourseMaterialLinks>().ReverseMap();
             CreateMap<CourseMaterialLinksDTO, CourseMaterialLinks>().ReverseMap();
+            CreateMap<CreateCourseMaterialFilesDTO, CourseMaterialFiles>().ReverseMap();
+            CreateMap<UpdateCourseMaterialFiles, CourseMaterialFiles>().ReverseMap();
+            CreateMap<CourseMaterialFilesDTO, CourseMaterialFiles>().ReverseMap();
+            CreateMap<ScheduleDTO, Schedules>().ReverseMap();
+            CreateMap<CreateScheduleDTO, Schedules>().ReverseMap();
         }
     }
 }

@@ -54,24 +54,26 @@ namespace MobileApp.Controllers
 
         [HttpPost]
         [Route("Create")]
-        public CustomReponse<CreateUnAcademicCourseDTO> Create([FromBody] CreateUnAcademicCourseDTO course)
+        public CustomReponse<UnAcademicCourseDTO> Create([FromForm] CreateUnAcademicCourseDTO course)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
                     var data = mapper.Map<UnAcademicCourse>(course);
-                    var imgname = fileUploader.upload("Images", course.Img);
+                    var imgname = fileUploader.upload("Files", course.Img);
                     data.ImgName = imgname;
+                    
                     unAcademicCourse.Add(data);
+                    var res=mapper.Map<UnAcademicCourseDTO>(data);
                     var message = new List<string>();
                     message.Add("تم ااضافة المادة بنجاح");
-                    return new CustomReponse<CreateUnAcademicCourseDTO> { StatusCode = 200, Data = course, Message = message };
+                    return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 200, Data = res, Message = message };
                 }
                 var errors = ModelState.Values.SelectMany(v => v.Errors)
                                         .Select(e => e.ErrorMessage)
                                         .ToList();
-                return new CustomReponse<CreateUnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = errors };
+                return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = errors };
 
 
             }
@@ -82,20 +84,20 @@ namespace MobileApp.Controllers
                 {
                     message.Add($"  موجودة بالفعل {coursedata} المادة ");
                 }
-                return new CustomReponse<CreateUnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = message };
+                return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = message };
 
             }
             catch (Exception e)
             {
                 var message = new List<string>();
                 message.Add(e.InnerException.Message);
-                return new CustomReponse<CreateUnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = message };
+                return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = message };
 
             }
         }
         [HttpPut]
         [Route("Update")]
-        public CustomReponse<UnAcademicCourseDTO> Update(UnAcademicCourseDTO Course)
+        public CustomReponse<UnAcademicCourseDTO> Update([FromForm]UpdateUnAcacdemicCourseDTO Course)
         {
             try
             {
@@ -105,12 +107,14 @@ namespace MobileApp.Controllers
                     if (entity is not null)
                     {
                         var data = mapper.Map<UnAcademicCourse>(Course);
-                        var imgname = fileUploader.upload("Images", Course.Img);
+                        var imgname = fileUploader.upload("Files", Course.Img);
                         data.ImgName = imgname;
+                       
                         unAcademicCourse.Update(data);
+                        var res = mapper.Map<UnAcademicCourseDTO>(data);
                         var message = new List<string>();
                         message.Add("تم تعديل المادة بنجاح");
-                        return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 200, Data = Course, Message = message };
+                        return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 200, Data = res, Message = message };
                     }
                     else
                     {
@@ -155,7 +159,7 @@ namespace MobileApp.Controllers
             {
                 unAcademicCourse.Delete(id);
                 var result = mapper.Map<UnAcademicCourseDTO>(data);
-                fileUploader.delete(data.ImgName, "Images");
+                fileUploader.delete(data.ImgName, "Files");
                 var message = new List<string>();
                 message.Add("تم حذف المادة بنجاح");
                 return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 200, Data = result, Message = message };

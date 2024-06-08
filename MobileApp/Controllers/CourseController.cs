@@ -52,31 +52,33 @@ namespace MobileApp.Controllers
                 return new CustomReponse<CourseDTo> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("Student Not Found");
+            NotFoundmessage.Add("المادة غير موجودة");
             return new CustomReponse<CourseDTo> { StatusCode = 404, Data = null, Message = NotFoundmessage };
 
         }
 
         [HttpPost]
         [Route("Create")]
-        public CustomReponse<CreateCourseDTO> Create([FromBody] CreateCourseDTO CreateCourseDTO)
+        public CustomReponse<CourseDTo> Create([FromForm] CreateCourseDTO CreateCourseDTO)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
                     var data = mapper.Map<Course>(CreateCourseDTO);
-                    var imgname = fileUploader.upload("Images", CreateCourseDTO.Img);
+                    var imgname = fileUploader.upload("Files", CreateCourseDTO.Img);
                     data.ImgName = imgname;
+                   
                     icourse.Add(data);
+                    var res = mapper.Map<CourseDTo>(data);
                     var message = new List<string>();
                     message.Add("تم ااضافة المادة بنجاح");
-                    return new CustomReponse<CreateCourseDTO> { StatusCode = 200, Data = CreateCourseDTO, Message = message };
+                    return new CustomReponse<CourseDTo> { StatusCode = 200, Data = res, Message = message };
                 }
                 var errors = ModelState.Values.SelectMany(v => v.Errors)
                                         .Select(e => e.ErrorMessage)
                                         .ToList();
-                return new CustomReponse<CreateCourseDTO> { StatusCode = 400, Data = null, Message = errors };
+                return new CustomReponse<CourseDTo> { StatusCode = 400, Data = null, Message = errors };
 
 
             }
@@ -85,22 +87,22 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var course in e.ConstraintProperties)
                 {
-                    message.Add($"  موجودة بالفعل {course} المادة ");
+                    message.Add($"المادة  موجودة بالفعل ");
                 }
-                return new CustomReponse<CreateCourseDTO> { StatusCode = 400, Data = null, Message = message };
+                return new CustomReponse<CourseDTo> { StatusCode = 400, Data = null, Message = message };
 
             }
             catch (Exception e)
             {
                 var message = new List<string>();
                 message.Add(e.InnerException.Message);
-                return new CustomReponse<CreateCourseDTO> { StatusCode = 400, Data = null, Message = message };
+                return new CustomReponse<CourseDTo> { StatusCode = 400, Data = null, Message = message };
 
             }
         }
         [HttpPut]
         [Route("Update")]
-        public CustomReponse<CourseDTo> Update(CourseDTo CourseDTo)
+        public CustomReponse<CourseDTo> Update([FromForm] UpdateCourseDTO CourseDTo)
         {
             try
             {
@@ -110,12 +112,14 @@ namespace MobileApp.Controllers
                     if (entity is not null)
                     {
                         var data = mapper.Map<Course>(CourseDTo);
-                        var imgname = fileUploader.upload("Images", CourseDTo.Img);
+                        var imgname = fileUploader.upload("Files", CourseDTo.Img);
                         data.ImgName = imgname;
+                        
                         icourse.Update(data);
+                        var res = mapper.Map<CourseDTo>(data);
                         var message = new List<string>();
                         message.Add("تم تعديل المادة بنجاح");
-                        return new CustomReponse<CourseDTo> { StatusCode = 200, Data = CourseDTo, Message = message };
+                        return new CustomReponse<CourseDTo> { StatusCode = 200, Data = res, Message = message };
                     }
                     else
                     {
@@ -137,7 +141,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var Course in e.ConstraintProperties)
                 {
-                    message.Add($"  موجودة بالفعل {Course} المادة ");
+                    message.Add($"المادة  موجودة بالفعل ");
                 }
                 return new CustomReponse<CourseDTo> { StatusCode = 400, Data = null, Message = message };
 
@@ -160,7 +164,7 @@ namespace MobileApp.Controllers
             {
                 icourse.Delete(id);
                 var result = mapper.Map<CourseDTo>(data);
-                fileUploader.delete(data.ImgName, "Images");
+                fileUploader.delete(data.ImgName, "Files");
                 var message = new List<string>();
                 message.Add("تم حذف المادة بنجاح");
                 return new CustomReponse<CourseDTo> { StatusCode = 200, Data = result, Message = message };

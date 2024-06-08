@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <Folder Include="BL\Services\" />
-    <Folder Include="Images\" />
+    <Folder Include="Files\" />
   </ItemGroup>
 
 </Project>

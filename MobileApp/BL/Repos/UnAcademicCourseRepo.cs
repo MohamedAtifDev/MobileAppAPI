@@ -43,6 +43,7 @@ namespace MobileApp.BL.Repos
 
         public void Update(UnAcademicCourse Course)
         {
+            db.ChangeTracker.Clear();
             db.Entry(Course).State = EntityState.Modified;
             db.SaveChanges();
         }

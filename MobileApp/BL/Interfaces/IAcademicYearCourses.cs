@@ -9,6 +9,7 @@ namespace MobileApp.BL.Interfaces
         void Update(UpdateAcademicYearCoursesDTO update);
         void Delete(int AcademicYear, int CourseId);
 
+        IEnumerable<Course> GetCourses(int academicyear);
         IEnumerable<AcademicYearCourses> GetAll();
         AcademicYearCourses GetById(int AcademicYear, int CourseId);
 

@@ -114,10 +114,14 @@ namespace MobileApp.Controllers
                     }
 
                 }
-                var errors = ModelState.Values.SelectMany(v => v.Errors)
-                                        .Select(e => e.ErrorMessage)
-                                        .ToList();
-                return new CustomReponse<GroupDTO> { StatusCode = 400, Data = null, Message = errors };
+                else
+                {
+                    var errors = ModelState.Values.SelectMany(v => v.Errors)
+                                                 .Select(e => e.ErrorMessage)
+                                                 .ToList();
+                    return new CustomReponse<GroupDTO> { StatusCode = 400, Data = null, Message = errors };
+                }
+     
 
 
             }
@@ -153,9 +157,13 @@ namespace MobileApp.Controllers
                 message.Add("تم حذف المجموعة بنجاح");
                 return new CustomReponse<GroupDTO> { StatusCode = 200, Data = result, Message = message };
             }
-            var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("المجموعة غير موجود");
-            return new CustomReponse<GroupDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
+            else
+            {
+                var NotFoundmessage = new List<string>();
+                NotFoundmessage.Add("المجموعة غير موجود");
+                return new CustomReponse<GroupDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
+            }
+           
         }
 
 

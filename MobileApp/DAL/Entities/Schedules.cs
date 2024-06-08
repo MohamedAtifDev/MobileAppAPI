@@ -11,8 +11,8 @@ namespace MobileApp.DAL.Entities
         public string Day {  get; set; }
 
 
-        [DataType(DataType.Time)]
-        public TimeOnly Time { get; set; }
+        
+        public String Time { get; set; }
 
 
         public int AcademicYearId { get; set; }
@@ -24,11 +24,16 @@ namespace MobileApp.DAL.Entities
 
         public int TeacherId { get; set; }
 
+        public int GroupID { get; set; }
+        [ForeignKey("AcademicYearId,CourseId,TeacherId,GroupID")]
 
-        [ForeignKey("AcademicYearId,CourseId,TeacherId")]
+
+        public CourseGroups CourseGroups { get; set; }
 
 
-        public AcademicYearCoursesTeachers academicYearCoursesTreachers { get; set; }
+    
+
+
 
     }
 }

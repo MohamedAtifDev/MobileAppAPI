@@ -49,7 +49,7 @@ namespace MobileApp.Controllers
                 return new CustomReponse<CourseMaterialLinksDTO> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("المعلم غير موجود");
+            NotFoundmessage.Add("الفيديو غير موجود");
             return new CustomReponse<CourseMaterialLinksDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
 
         }
@@ -60,16 +60,20 @@ namespace MobileApp.Controllers
         public CustomReponse<IEnumerable<CourseMaterialLinksDTO>> GetLinks(int AcademicYearid,int CourseId,int TeacherId)
         {
             var data = courseMaterialLinks.GetSpecial(AcademicYearid,  CourseId,  TeacherId);
-            if (data is not null)
+            if (data.Count()==0)
             {
                 var result = mapper.Map< IEnumerable<CourseMaterialLinksDTO>> (data);
                 var message = new List<string>();
                 message.Add("تم استرجاع البيانات بنجاح");
                 return new CustomReponse<IEnumerable <CourseMaterialLinksDTO >> { StatusCode = 200, Data = result, Message = message };
             }
-            var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add(" لا يوجد فيديوهات");
-            return new CustomReponse<IEnumerable<CourseMaterialLinksDTO>> { StatusCode = 404, Data = null, Message = NotFoundmessage };
+            else
+            {
+                var NotFoundmessage = new List<string>();
+                NotFoundmessage.Add(" لا يوجد فيديوهات");
+                return new CustomReponse<IEnumerable<CourseMaterialLinksDTO>> { StatusCode = 404, Data = null, Message = NotFoundmessage };
+
+            }
 
         }
 

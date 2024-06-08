@@ -28,7 +28,7 @@ namespace MobileApp.BL.DTO
         public string ZoomLink { get; set; }
 
 
-        public string ImgName { get; set; }
+        public string ?ImgName { get; set; }
 
 
         [Required(ErrorMessage = "صورة المعلم مطلوبة")]

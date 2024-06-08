@@ -16,11 +16,10 @@ namespace MobileApp.BL.DTO
         [MinLength(3, ErrorMessage = "اقل طول للوصف 3 حروف")]
         public string Description { get; set; }
 
-        public string ImgName { get; set; }
+        public string? ImgName { get; set; }
 
 
-        [Required(ErrorMessage = "صورة المادة مطلوبة")]
-        public IFormFile Img{get; set; }    
+     
 
 
 

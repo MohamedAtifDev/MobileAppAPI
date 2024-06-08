@@ -24,6 +24,8 @@ namespace MobileApp.DAL.Entities
         [ForeignKey("TeacherId")]
         public Teacher Teacher { get; set; }
 
+
+
         public string YoutubeLink { get; set; }
         public DateTime startDate { get; set; }
 
@@ -31,11 +33,12 @@ namespace MobileApp.DAL.Entities
 
         public int NumberOfLessons { get; set; }
 
+        public IEnumerable<CourseGroups> groups { get; set; }
         public IEnumerable<CourseMaterialLinks> CourseMaterialLinks { get; set; }
 
         public IEnumerable<CourseMaterialFiles> CourseMaterialFiles { get; set; }
-        public IEnumerable<StudentCourse> StudentCourses { get; set; }
+        //public IEnumerable<StudentCourse> StudentCourses { get; set; }
 
-        public IEnumerable<Schedules> Schedules { get; set; }
+        //public IEnumerable<Schedules> Schedules { get; set; }
     }
 }

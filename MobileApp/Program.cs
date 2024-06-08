@@ -3,6 +3,7 @@ using EntityFramework.Exceptions.SqlServer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 using MobileApp.BL.AutoMapper;
 using MobileApp.BL.Interfaces;
@@ -61,7 +62,9 @@ namespace MobileApp
             builder.Services.AddScoped<IAcademicYearCourses, AcademicYearCoursesRepo>();
             builder.Services.AddScoped<IAcademicYeatCoursesTeachers, AcademicYearCoursesTeachersRepo>();
             builder.Services.AddScoped<ICourseMaterialLinks, CourseMaterialLinksRepo>();
-
+            builder.Services.AddScoped<ICourseMaterialFiles, CourseMaterialFilesRepo>();
+            builder.Services.AddScoped<IUnAcademicCourse, UnAcademicCourseRepo>();
+            builder.Services.AddScoped<ISchedules, ScheduleRepo>();
             builder.Services.AddMvc()
         .ConfigureApiBehaviorOptions(options => {
             options.SuppressModelStateInvalidFilter = true;
@@ -70,6 +73,7 @@ namespace MobileApp
             {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 opt.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+               
               
             });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -95,6 +99,13 @@ namespace MobileApp
 
             app.UseAuthorization();
 
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "Files")),
+                RequestPath = "/Resources"
+
+            }
+            ); ;
 
             app.MapControllers();
 

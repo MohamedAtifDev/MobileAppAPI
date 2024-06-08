@@ -12,8 +12,8 @@ using MobileApp.DAL.DataContext;
 namespace MobileApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240603121035_build-db3")]
-    partial class builddb3
+    [Migration("20240607151643_build")]
+    partial class build
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -357,6 +357,69 @@ namespace MobileApp.Migrations
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseGroups", b =>
+                {
+                    b.Property<int>("AcademicYearId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GroupId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberOfStudents")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.HasKey("AcademicYearId", "CourseId", "TeacherId", "GroupId");
+
+                    b.HasIndex("GroupId");
+
+                    b.ToTable("CourseGroups");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseMaterialFiles", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AcademicYearId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AcademicYearId", "CourseId", "TeacherId");
+
+                    b.ToTable("CourseMaterialFiles");
+                });
+
             modelBuilder.Entity("MobileApp.DAL.Entities.CourseMaterialLinks", b =>
                 {
                     b.Property<int>("Id")
@@ -406,12 +469,6 @@ namespace MobileApp.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("NumberOfStudents")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
                     b.HasKey("Id");
 
                     b.HasIndex("Name")
@@ -438,15 +495,19 @@ namespace MobileApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("GroupID")
+                        .HasColumnType("int");
+
                     b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
-                    b.Property<TimeOnly>("Time")
-                        .HasColumnType("time");
+                    b.Property<string>("Time")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AcademicYearId", "CourseId", "TeacherId");
+                    b.HasIndex("AcademicYearId", "CourseId", "TeacherId", "GroupID");
 
                     b.ToTable("schedules");
                 });
@@ -468,7 +529,12 @@ namespace MobileApp.Migrations
                     b.Property<DateTime>("AssignDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("GroupID")
+                        .HasColumnType("int");
+
                     b.HasKey("CourseId", "StudentId", "AcademicYearId", "TeacherId");
+
+                    b.HasIndex("GroupID");
 
                     b.HasIndex("StudentId");
 
@@ -654,6 +720,36 @@ namespace MobileApp.Migrations
                     b.Navigation("Teacher");
                 });
 
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseGroups", b =>
+                {
+                    b.HasOne("MobileApp.DAL.Entities.Group", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
+                        .WithMany("groups")
+                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+
+                    b.Navigation("academicYearCoursesTreachers");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseMaterialFiles", b =>
+                {
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
+                        .WithMany("CourseMaterialFiles")
+                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("academicYearCoursesTreachers");
+                });
+
             modelBuilder.Entity("MobileApp.DAL.Entities.CourseMaterialLinks", b =>
                 {
                     b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
@@ -667,32 +763,40 @@ namespace MobileApp.Migrations
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Schedules", b =>
                 {
-                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
+                    b.HasOne("MobileApp.DAL.Entities.CourseGroups", "CourseGroups")
                         .WithMany("Schedules")
-                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
+                        .HasForeignKey("AcademicYearId", "CourseId", "TeacherId", "GroupID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("academicYearCoursesTreachers");
+                    b.Navigation("CourseGroups");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.StudentCourse", b =>
                 {
+                    b.HasOne("MobileApp.DAL.Entities.Group", "Group")
+                        .WithMany("studentCourses")
+                        .HasForeignKey("GroupID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MobileApp.DAL.Entities.AppUser", "Student")
                         .WithMany("StudentCourses")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "academicYearCoursesTreachers")
-                        .WithMany("StudentCourses")
+                    b.HasOne("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", "AcademicYearCoursesTeachers")
+                        .WithMany()
                         .HasForeignKey("AcademicYearId", "CourseId", "TeacherId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Student");
+                    b.Navigation("AcademicYearCoursesTeachers");
 
-                    b.Navigation("academicYearCoursesTreachers");
+                    b.Navigation("Group");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.UnAcademicCourse", b =>
@@ -717,11 +821,11 @@ namespace MobileApp.Migrations
 
             modelBuilder.Entity("MobileApp.DAL.Entities.AcademicYearCoursesTeachers", b =>
                 {
+                    b.Navigation("CourseMaterialFiles");
+
                     b.Navigation("CourseMaterialLinks");
 
-                    b.Navigation("Schedules");
-
-                    b.Navigation("StudentCourses");
+                    b.Navigation("groups");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.AppUser", b =>
@@ -735,6 +839,16 @@ namespace MobileApp.Migrations
             modelBuilder.Entity("MobileApp.DAL.Entities.Course", b =>
                 {
                     b.Navigation("academicYearCourses");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.CourseGroups", b =>
+                {
+                    b.Navigation("Schedules");
+                });
+
+            modelBuilder.Entity("MobileApp.DAL.Entities.Group", b =>
+                {
+                    b.Navigation("studentCourses");
                 });
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Teacher", b =>

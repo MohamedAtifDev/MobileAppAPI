@@ -14,7 +14,7 @@ namespace MobileApp.BL.DTO
         public string Description { get; set; }
 
 
-        public string ImgName { get; set; }
+     
 
 
         [Required(ErrorMessage = "صورة المادة مطلوبة")]

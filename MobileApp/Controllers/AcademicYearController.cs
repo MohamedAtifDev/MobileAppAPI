@@ -76,7 +76,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var academicYear in e.ConstraintProperties)
                 {
-                    message.Add($"  موجودة بالفعل {academicYear} الصف الدراسى ");
+                    message.Add($" اسم الصف الدراسى موجود بالفعل  ");
                 }
                 return new CustomReponse<CreateAcademicYearDTO> { StatusCode = 400, Data = null, Message = message };
 
@@ -126,7 +126,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var academicyear in e.ConstraintProperties)
                 {
-                    message.Add($"  موجودة بالفعل {academicyear} الصف الدراسى ");
+                    message.Add($"اسم الصف الدراسى موجود بالفعل  ");
                 }
                 return new CustomReponse<AcademicYearDTO> { StatusCode = 400, Data = null, Message = message };
 

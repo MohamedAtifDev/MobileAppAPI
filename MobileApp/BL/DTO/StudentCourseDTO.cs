@@ -36,7 +36,8 @@ namespace MobileApp.BL.DTO
         [Required(ErrorMessage = "المعلم مطلوب")]
         public int TeacherId { get; set; }
 
-
+        [Required(ErrorMessage = "المجموعة مطلوبة")]
+        public int GroupID { get; set; }
         public DateTime AssignDate { get; set; }
     }
 }

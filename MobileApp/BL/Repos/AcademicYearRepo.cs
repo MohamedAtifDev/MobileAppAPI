@@ -44,6 +44,7 @@ namespace MobileApp.BL.Repos
 
         public void Update(AcademicYear AcademicYear)
         {
+            db.ChangeTracker.Clear();
          db.Entry(AcademicYear).State=EntityState.Modified;
             db.SaveChanges();
         }
