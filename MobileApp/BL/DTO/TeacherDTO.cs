@@ -35,12 +35,12 @@ namespace MobileApp.BL.DTO
         [Required(ErrorMessage = "صورة المعلم مطلوبة")]
         public IFormFile Img { get; set; }
 
-        public string YoutubeLink { get; set; }
-        public DateTime startDate { get; set; }
+        public string? YoutubeLink { get; set; }
+        public DateTime? startDate { get; set; }
 
-        public DateTime endDate { get; set; }
+        public DateTime? endDate { get; set; }
 
-        public int NumberOfLessons { get; set; }
+        public int? NumberOfLessons { get; set; }
 
         public IEnumerable<FroupWithScheduleDTO> Groups {  get; set; }
 

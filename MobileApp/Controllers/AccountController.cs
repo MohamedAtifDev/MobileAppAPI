@@ -21,8 +21,8 @@ using MobileApp.BL.Interfaces;
 
 namespace OnlineExamAPI.Controllers
 {
-    //[Route("api/[controller]")]
-    //[ApiController]
+    [Route("api/[controller]")]
+    [ApiController]
     [EnableCors]
     public class AccountController : ControllerBase
     {

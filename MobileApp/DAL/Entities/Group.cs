@@ -12,7 +12,7 @@ namespace MobileApp.DAL.Entities
         [StringLength(50)]
         public string Name { get; set; }
 
-        //public IEnumerable<CourseGroups> groups { get; set; }
+        public IEnumerable<CourseGroups> groups { get; set; }
         //public  double Price {  get; set; }
         //public int NumberOfStudents {  get; set; }
 

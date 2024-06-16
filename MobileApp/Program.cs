@@ -65,6 +65,7 @@ namespace MobileApp
             builder.Services.AddScoped<ICourseMaterialFiles, CourseMaterialFilesRepo>();
             builder.Services.AddScoped<IUnAcademicCourse, UnAcademicCourseRepo>();
             builder.Services.AddScoped<ISchedules, ScheduleRepo>();
+            builder.Services.AddScoped<ICourseGroup, CourseGroupsRepo>();
             builder.Services.AddMvc()
         .ConfigureApiBehaviorOptions(options => {
             options.SuppressModelStateInvalidFilter = true;
@@ -102,7 +103,7 @@ namespace MobileApp
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "Files")),
-                RequestPath = "/Resources"
+                RequestPath = "/Files"
 
             }
             ); ;

@@ -59,7 +59,7 @@ namespace MobileApp.Controllers
 
         [HttpPost]
         [Route("Create")]
-        public CustomReponse<CreateTeacherDTO> Create([FromBody] CreateTeacherDTO TeacherDTO)
+        public CustomReponse<CreateTeacherDTO> Create([FromForm] CreateTeacherDTO TeacherDTO)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace MobileApp.Controllers
                     var data = mapper.Map<Teacher>(TeacherDTO);
                     var imgname = fileUploader.upload("Files", TeacherDTO.Img);
                     data.ImgName = imgname;
-                    TeacherDTO.ImgName = imgname;
+                  
                     iteacher.Add(data);
                     var message = new List<string>();
                     message.Add("تم اضافة المعلم بنجاح");
@@ -86,7 +86,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var Teacher in e.ConstraintProperties)
                 {
-                    message.Add($"  موجود بالفعل{Teacher} ");
+                    message.Add($" البريد الالكترونى موجود بالفعل  ");
                 }
                 return new CustomReponse<CreateTeacherDTO> { StatusCode = 400, Data = null, Message = message };
 
@@ -101,7 +101,7 @@ namespace MobileApp.Controllers
         }
         [HttpPut]
         [Route("Update")]
-        public CustomReponse<TeacherDTO> Update(TeacherDTO TeacherDTO)
+        public CustomReponse<UpdateTeacherDTO> Update([FromForm]UpdateTeacherDTO TeacherDTO)
         {
             try
             {
@@ -113,24 +113,24 @@ namespace MobileApp.Controllers
                         var data = mapper.Map<Teacher>(TeacherDTO);
                         var imgname = fileUploader.upload("Files", TeacherDTO.Img);
                         data.ImgName = imgname;
-                        TeacherDTO.ImgName = imgname;
+                     
                         iteacher.Update(data);
                         var message = new List<string>();
                         message.Add("تم تعديل المعلم بنجاح");
-                        return new CustomReponse<TeacherDTO> { StatusCode = 200, Data = TeacherDTO, Message = message };
+                        return new CustomReponse<UpdateTeacherDTO> { StatusCode = 200, Data = TeacherDTO, Message = message };
                     }
                     else
                     {
                         var NotFoundmessage = new List<string>();
                         NotFoundmessage.Add("المعلم غير موجود");
-                        return new CustomReponse<TeacherDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
+                        return new CustomReponse<UpdateTeacherDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
                     }
                    
                 }
                 var errors = ModelState.Values.SelectMany(v => v.Errors)
                                         .Select(e => e.ErrorMessage)
                                         .ToList();
-                return new CustomReponse<TeacherDTO> { StatusCode = 400, Data = null, Message = errors };
+                return new CustomReponse<UpdateTeacherDTO> { StatusCode = 400, Data = null, Message = errors };
 
 
             }
@@ -139,16 +139,16 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var Teacher in e.ConstraintProperties)
                 {
-                    message.Add($"  موجود بالفعل{Teacher} ");
+                    message.Add($"  البريد الالكترونى موجود بالفعل  ");
                 }
-                return new CustomReponse<TeacherDTO> { StatusCode = 400, Data = null, Message = message };
+                return new CustomReponse<UpdateTeacherDTO> { StatusCode = 400, Data = null, Message = message };
 
             }
             catch (Exception e)
             {
                 var message = new List<string>();
                 message.Add(e.InnerException.Message);
-                return new CustomReponse<TeacherDTO> { StatusCode = 400, Data = null, Message = message };
+                return new CustomReponse<UpdateTeacherDTO> { StatusCode = 400, Data = null, Message = message };
 
             }
         }

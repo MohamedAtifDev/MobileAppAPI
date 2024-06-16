@@ -62,6 +62,7 @@ namespace MobileApp.Controllers
 
                     if (ModelState.IsValid)
                     {
+                   
                     var res = mapper.Map<StudentCourse>(StudentCourseDTO);
                     var record=std_Crs.IsExsits(res);
                     if(!record)

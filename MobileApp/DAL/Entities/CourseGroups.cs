@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MobileApp.DAL.Entities
 {
@@ -20,11 +21,11 @@ namespace MobileApp.DAL.Entities
 
         public AcademicYearCoursesTeachers academicYearCoursesTreachers { get; set; }
 
-
-        public int GroupId {  get; set; }
+        [AllowNull]
+        public int? GroupId {  get; set; }
 
         [ForeignKey("GroupId")]
-
+        [AllowNull]
         public Group Group { get; set; }
 
         public Double Price { get; set; }

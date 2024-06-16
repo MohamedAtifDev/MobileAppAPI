@@ -365,7 +365,7 @@ namespace MobileApp.Migrations
                     b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
-                    b.Property<int>("GroupId")
+                    b.Property<int?>("GroupId")
                         .HasColumnType("int");
 
                     b.Property<int>("NumberOfStudents")
@@ -526,7 +526,7 @@ namespace MobileApp.Migrations
                     b.Property<DateTime>("AssignDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GroupID")
+                    b.Property<int?>("GroupID")
                         .HasColumnType("int");
 
                     b.HasKey("CourseId", "StudentId", "AcademicYearId", "TeacherId");
@@ -720,7 +720,7 @@ namespace MobileApp.Migrations
             modelBuilder.Entity("MobileApp.DAL.Entities.CourseGroups", b =>
                 {
                     b.HasOne("MobileApp.DAL.Entities.Group", "Group")
-                        .WithMany()
+                        .WithMany("groups")
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -774,8 +774,7 @@ namespace MobileApp.Migrations
                     b.HasOne("MobileApp.DAL.Entities.Group", "Group")
                         .WithMany("studentCourses")
                         .HasForeignKey("GroupID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("MobileApp.DAL.Entities.AppUser", "Student")
                         .WithMany("StudentCourses")
@@ -845,6 +844,8 @@ namespace MobileApp.Migrations
 
             modelBuilder.Entity("MobileApp.DAL.Entities.Group", b =>
                 {
+                    b.Navigation("groups");
+
                     b.Navigation("studentCourses");
                 });
 

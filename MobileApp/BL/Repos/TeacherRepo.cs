@@ -44,6 +44,7 @@ namespace MobileApp.BL.Repos
 
         public void Update(Teacher Teacher)
         {
+            db.ChangeTracker.Clear();
               db.Entry(Teacher).State=Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.SaveChanges();
                 }

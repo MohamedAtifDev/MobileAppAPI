@@ -47,7 +47,7 @@ namespace MobileApp.Controllers
                 return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 200, Data = result, Message = message };
             }
             var NotFoundmessage = new List<string>();
-            NotFoundmessage.Add("Student Not Found");
+            NotFoundmessage.Add("المادة غير موجودة");
             return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 404, Data = null, Message = NotFoundmessage };
 
         }
@@ -82,7 +82,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var coursedata in e.ConstraintProperties)
                 {
-                    message.Add($"  موجودة بالفعل {coursedata} المادة ");
+                    message.Add($" اسم المادة موجودة بالفعل  ");
                 }
                 return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = message };
 
@@ -136,7 +136,7 @@ namespace MobileApp.Controllers
                 var message = new List<string>();
                 foreach (var course in e.ConstraintProperties)
                 {
-                    message.Add($"  موجودة بالفعل {course} المادة ");
+                    message.Add($" اسم المادة موجودة بالفعل  ");
                 }
                 return new CustomReponse<UnAcademicCourseDTO> { StatusCode = 400, Data = null, Message = message };
 
